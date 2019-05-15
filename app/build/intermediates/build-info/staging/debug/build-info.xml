@@ -2,54 +2,81 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="27"
-    build-mode="COLD"
+    build-mode="FULL"
     density="xhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.3.2"
-    timestamp="1557885653306"
+    timestamp="1557887284850"
     token="4660862951113679602"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="3544" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="538" />
     <task
         name="verifier"
-        duration="0" />
+        duration="271" />
+
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/resources/instant-run/staging/debug/resources-staging-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/instant-run-apk/staging/debug/app-staging-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1557884119491"
-        verifier="FULL_BUILD_REQUESTED" >
+        ir-eligibility="COMPATIBLE"
+        timestamp="1557887284850"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_3.apk"
+            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/resources/instant-run/staging/debug/resources-staging-debug.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_9.apk"
+            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
             location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_1.apk"
@@ -58,39 +85,29 @@
             location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/dep/dependencies.apk"
+            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/resources/instant-run/staging/debug/resources-staging-debug.apk"
+            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/instant-run-apk/staging/debug/app-staging-debug.apk"
             type="SPLIT_MAIN" />
     </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1557884374107"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_4.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1557885256220"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/resources/instant-run/staging/debug/resources-staging-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/split-apk/staging/debug/slices/slice_6.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1557885653306"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

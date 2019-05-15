@@ -44,16 +44,16 @@
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi_bg_login.png.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/bg_login.png"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi_ic_item_favorite_normal.png.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/ic_item_favorite_normal.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi_ic_item_favorite_normal.png.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/ic_item_favorite_normal.png"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi_bg_login.png.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/bg_login.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_select_dialog_singlechoice_material.xml.flat",
@@ -100,12 +100,12 @@
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/layout/design_bottom_navigation_item.xml"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-anydpi-v21_design_ic_visibility_off.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi_ic_favourite_selected.png.flat",
@@ -188,12 +188,12 @@
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-anydpi-v21_mapbox_user_icon_stale.xml.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/res/drawable-anydpi-v21/mapbox_user_icon_stale.xml"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi_ic_right_black.png.flat",
@@ -204,12 +204,12 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-hdpi/ic_find_us.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xxhdpi-v4/abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxhdpi_ic_facebook.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xxhdpi/ic_facebook.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xxhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi-v4_mapbox_logo_icon.png.flat",
@@ -268,24 +268,24 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-mdpi/ic_popular_inactive.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_abc_expanded_menu_layout.xml.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xxhdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi_ic_profile.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xhdpi/ic_profile.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/color_design_error.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/color/design_error.xml"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/color_design_error.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/color/design_error.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_abc_text_cursor_material.xml.flat",
@@ -344,20 +344,20 @@
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/animator/design_fab_hide_motion_spec.xml"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_ic_mtrl_chip_checked_circle.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/drawable/ic_mtrl_chip_checked_circle.xml"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_ic_mtrl_chip_checked_circle.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/drawable/ic_mtrl_chip_checked_circle.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi_ic_settings_active.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-xhdpi/ic_settings_active.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_abc_ratingbar_material.xml.flat",
@@ -428,20 +428,20 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xxxhdpi/ic_profile_selected.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_tooltip_frame_dark.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable/tooltip_frame_dark.xml"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_notification_action_tombstone.xml.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/res/layout/notification_action_tombstone.xml"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_abc_alert_dialog_material.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/layout/abc_alert_dialog_material.xml"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_tooltip_frame_dark.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable/tooltip_frame_dark.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_abc_alert_dialog_material.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat",
@@ -496,20 +496,20 @@
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/res/drawable-xhdpi-v4/mapbox_user_icon.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi_ic_settings_inactive.png.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-xxxhdpi/ic_settings_inactive.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_abc_activity_chooser_view.xml.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/layout/abc_activity_chooser_view.xml"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi_ic_settings_inactive.png.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-xxxhdpi/ic_settings_inactive.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi_path.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/path.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -532,48 +532,48 @@
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_abc_dialog_material_background.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable/abc_dialog_material_background.xml"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi_ic_close_black.png.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/ic_close_black.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi_ic_close_black.png.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/ic_close_black.png"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_abc_dialog_material_background.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable/abc_dialog_material_background.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi_ic_star_normal.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xhdpi/ic_star_normal.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_mtrl_layout_snackbar.xml.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/layout/mtrl_layout_snackbar.xml"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable/abc_seekbar_tick_mark_material.xml"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/res/drawable-mdpi-v4/notification_bg_normal.9.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxhdpi_ic_discover.png.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xxhdpi/ic_discover.png"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi_ic_item_favorite_normal.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xxxhdpi/ic_item_favorite_normal.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxhdpi_ic_discover.png.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xxhdpi/ic_discover.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-anydpi-v21_mapbox_info_icon_default.xml.flat",
@@ -668,20 +668,20 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xxhdpi/bg_infor.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_item_review_homestay.xml.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/item_review_homestay.xml"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi_ic_settings_inactive.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-hdpi/ic_settings_inactive.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_item_review_homestay.xml.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/item_review_homestay.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_mapbox_user_stroke_icon.png.flat",
@@ -712,12 +712,12 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/ic_map_selected.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-anydpi-v21_ic_favorite_inactive.xml.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-anydpi-v21/ic_favorite_inactive.xml"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-anydpi-v21_ic_favorite_inactive.xml.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-anydpi-v21/ic_favorite_inactive.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -780,28 +780,28 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/ic_parking.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_abc_action_mode_close_item_material.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi-v4_mapbox_mylocation_icon_default.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/res/drawable-mdpi-v4/mapbox_mylocation_icon_default.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi_ic_favorite_inactive.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-xhdpi/ic_favorite_inactive.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi-v4_mapbox_mylocation_icon_default.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/res/drawable-mdpi-v4/mapbox_mylocation_icon_default.png"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_abc_action_mode_close_item_material.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/font_montserrat_regular.otf.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/font/montserrat_regular.otf"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/color_mtrl_tabs_legacy_text_color_selector.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/color/mtrl_tabs_legacy_text_color_selector.xml"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/color_mtrl_tabs_legacy_text_color_selector.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/color/mtrl_tabs_legacy_text_color_selector.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi_ic_map.png.flat",
@@ -824,12 +824,12 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-anydpi-v21/ic_popular_active.xml"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_mapbox_mapview_internal.xml.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/res/layout/mapbox_mapview_internal.xml"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi_ic_home_inactive.png.flat",
@@ -948,12 +948,12 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-xhdpi/ic_explore_inactive.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/color-v23_abc_color_highlight_material.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/color-v23/abc_color_highlight_material.xml"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_mapbox_logo_icon.png.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/res/drawable-hdpi-v4/mapbox_logo_icon.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/color-v23_abc_color_highlight_material.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/color-v23/abc_color_highlight_material.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/color_abc_tint_btn_checkable.xml.flat",
@@ -984,12 +984,12 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-ldpi/ic_explore_inactive.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi_ic_favorite_active.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/build/generated/res/pngs/staging/debug/drawable-xxxhdpi/ic_favorite_active.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_bottom_sheet.xml.flat",
@@ -1008,16 +1008,16 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable/img_avatar_sample.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_shape_image_placeholder.xml.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/android-base-component-java/build/intermediates/packaged_res/debug/drawable/shape_image_placeholder.xml"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_ic_mtrl_chip_checked_black.xml.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/res/drawable/ic_mtrl_chip_checked_black.xml"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_shape_image_placeholder.xml.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/android-base-component-java/build/intermediates/packaged_res/debug/drawable/shape_image_placeholder.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/color_abc_secondary_text_material_light.xml.flat",
@@ -1028,12 +1028,12 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xxhdpi/ic_map.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_abc_list_menu_item_checkbox.xml.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/layout/abc_list_menu_item_checkbox.xml"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxhdpi_ic_option_black.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xxhdpi/ic_option_black.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/layout_abc_list_menu_item_checkbox.xml.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
@@ -1132,12 +1132,12 @@
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/res/drawable-xxxhdpi-v4/mapbox_logo_helmet.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable_abc_btn_colored_material.xml.flat",
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1592,12 +1592,12 @@
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi-v4_mapbox_user_stroke_icon.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/res/drawable-xxxhdpi-v4/mapbox_user_stroke_icon.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi_ic_logo_pin.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/ic_logo_pin.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi-v4_mapbox_user_stroke_icon.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/res/drawable-xxxhdpi-v4/mapbox_user_stroke_icon.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-v23_abc_control_background_material.xml.flat",
@@ -1676,12 +1676,12 @@
         "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-ldrtl-xxhdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi_bg_login.png.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xhdpi/bg_login.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi_ic_logo_pin.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-hdpi/ic_logo_pin.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi_bg_login.png.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xhdpi/bg_login.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xhdpi_ic_find_us.png.flat",
@@ -2228,12 +2228,12 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/ic_right_white.png"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
-        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_light.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi_ic_search_white.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xxxhdpi/ic_search_white.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
+        "source": "/Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxxhdpi_ic_option_black.png.flat",
@@ -2420,12 +2420,12 @@
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable/bg_gradient_profile.xml"
     },
     {
-        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi_ic_back.png.flat",
-        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/ic_back.png"
-    },
-    {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-xxhdpi_ic_search_white.png.flat",
         "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-xxhdpi/ic_search_white.png"
+    },
+    {
+        "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-mdpi_ic_back.png.flat",
+        "source": "/Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-mdpi/ic_back.png"
     },
     {
         "merged": "/Users/lanltn/fb-ripple-effects-android-java/app/build/intermediates/res/merged/staging/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
