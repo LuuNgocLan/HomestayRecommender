@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:clickable="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_24dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bg_header"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:background="@color/color_bg_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/discover"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/bg_header"
+        app:layout_constraintEnd_toEndOf="@id/bg_header"
+        app:layout_constraintStart_toStartOf="@id/bg_header"
+        app:layout_constraintTop_toTopOf="@+id/bg_header" />
+
+    <ImageView
+        android:id="@+id/imv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/selector_ripple_active"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@id/bg_header"
+        app:layout_constraintEnd_toEndOf="@id/bg_header"
+        app:layout_constraintTop_toTopOf="@id/bg_header" />
+
+    <ImageView
+        android:id="@+id/imv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/selector_ripple_active"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_option_black"
+        app:layout_constraintBottom_toBottomOf="@id/bg_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bg_header" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg_header">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bg_recommendation"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_gradient"
+                app:layout_constraintBottom_toBottomOf="@id/bg_recommendation"
+                app:layout_constraintStart_toStartOf="@id/bg_recommendation"
+                app:layout_constraintTop_toTopOf="@id/bg_recommendation" />
+
+            <TextView
+                android:id="@+id/tv_recommendation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Recommend for you"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_recommendation" />
+
+            <View
+                android:id="@+id/bg_spots"
+                android:layout_width="match_parent"
+                android:layout_height="375dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_recommend" />
+
+            <TextView
+                android:id="@+id/tv_all_spots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/spots_to_stay"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/bg_spots" />
+
+            <ImageView
+                android:id="@+id/imv_see_more_spot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30dp"
+                android:background="@drawable/selector_ripple_active"
+                android:clickable="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_right_black"
+                app:layout_constraintBottom_toBottomOf="@id/tv_all_spots"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_all_spots" />
+
+            <TextView
+                android:id="@+id/tv_spots_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="1.2k Spots"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_all_spots" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_spots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_spots_num" />
+
+            <ImageView
+                android:id="@+id/bg_place"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/bg_image"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_spots" />
+
+            <TextView
+                android:id="@+id/tv_all_places"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/destinations"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/bg_place" />
+
+            <ImageView
+                android:id="@+id/imv_see_more_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30dp"
+                android:background="@drawable/selector_ripple_active"
+                android:clickable="true"
+                android:padding="5dp"
+                android:src="@drawable/ic_right_white"
+                app:layout_constraintBottom_toBottomOf="@id/tv_all_places"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_all_places" />
+
+            <TextView
+                android:id="@+id/tv_place_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="50 places"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_all_places" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_destinations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_place_num" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

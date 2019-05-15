@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#22252C</color>
+    <color name="colorPrimaryDark">#14191F</color>
+    <color name="colorAccent">#19ACA8</color>
+
+    <color name="main_background_color">#FDCD1A</color>
+    <color name="main_tab_color">#F8F8F8</color>
+    <color name="main_view_color">#FFFFFFFF</color>
+    <color name="main_line_color">#9CB1B0B0</color>
+
+    <color name="paint_white">#FFFFFFFF</color>
+    <color name="paint_orange">#FFFF5500</color>
+    <color name="paint_yellow">#FFFFEB3B</color>
+
+    <color name="tab_text_inactive">#4B4B4B</color>
+    <color name="tab_text_active">#000000</color>
+
+    <color name="main_text_color">#E13C2A</color>
+
+    <color name="main_ripple_color">#88FCFCFD</color>
+
+    <color name="main_color">#3B5998</color>
+
+    <color name="red">#ffFF0000</color>
+
+    <color name="orange">#ffFFA500</color>
+
+    <color name="green">#ff008000</color>
+    <color name="color_blue_dark">#860D0C0C</color>
+    <color name="color_bg_header">#E6FDFDFD</color>
+    <color name="color_line_horizontal">#d7d7d7</color>
+    <color name="color_text_login">#5DC1B2</color>
+    <color name="color_bg">#F1F1F3</color>
+    <color name="color_black">#000000</color>
+</resources>

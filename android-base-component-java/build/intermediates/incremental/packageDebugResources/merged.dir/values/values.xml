@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_place_holder">#ffffff</color>
+    <string name="app_name">android base component java</string>
+</resources>

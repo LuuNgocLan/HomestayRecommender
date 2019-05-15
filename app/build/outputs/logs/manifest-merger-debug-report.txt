@@ -1,0 +1,274 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:2:1-28:12
+MERGED from [:android-base-component-java] /Users/lanltn/fb-ripple-effects-android-java/android-base-component-java/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:2:1-20:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/bc156df70485d58296e3984d67ecf78a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f2df77a915af02f846e4d4f4c1e50a14/AndroidManifest.xml:2:1-11:12
+MERGED from [com.jakewharton:butterknife:8.6.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/butterknife-8.6.0.aar/e480e8c3ead9305ee949bd1d9bb65077/AndroidManifest.xml:2:1-7:12
+MERGED from [com.auth0.android:jwtdecode:1.2.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/jwtdecode-1.2.0.aar/8370ed16a8f1f1b5094920980f64bd10/AndroidManifest.xml:2:1-11:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:2:1-24:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/e1d5f776b13765a8c379252f7414fd41/AndroidManifest.xml:15:1-21:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/fa10e2b6613833cae9de8237bc5fd2b6/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/323f6cddce94c67e7a4ec7f5f325b389/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/268a232d779abaf6733b20884d475203/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/360b2329d1a6a7829cbfaabd7dbffda3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/bb63702e39b7c0eb9484a33e9c6468ca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/6b9904ca0806bfcae602c34103444cd4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/4f34089070c45983a948ed6c7173237a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/c7033d38c6538d8bd4c9237f39e8f566/AndroidManifest.xml:17:1-22:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-gestures:0.4.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-gestures-0.4.0.aar/fb029f7d7aedd999f3b897215fe9873c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:loader:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f9db8da921d5ba0deaa21299eccd34f9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/7827f6d2d5c6f017d1aaf49b952f24cc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/965a0580b7020ceb2709072b187de966/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e4adbff429bac1924155fc729bdfd00b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/8caa81b328a221f042853938963e503a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/182fb707bba0cc868c017f9fdbb36cc2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/8eda37d8650e29316d934b3952f21553/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/7e6e24db2edf242f5d71bf35439c97e5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f8d8e49401baa7d563f22c6cb0762d8e/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/70ee46eb1b2b8ab63052d7ef04fdf75c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/1e4fe67c32ec276dc40c193613b1e0cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/1f6a371bbed21e8df268348e0d29c666/AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/64fc19ecd43bcdc2f17cba8d93c7e851/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/cef82d96f69759e9c0a3b8479131097c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/e0d8e1e737d0a7d16261f3d989df952d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/8469b7274b1c502ffb179f2e311c04e5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/ba2de5039ccedf947d16d3c26cf564e3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/12a9cf90c3e1bb773621fa96a41913c1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6455a3a4cf75a6d7a2d82a2b486e1c9a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1dce12b6bf9524aa7fbf7575c7c70ef9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cc396895976fb1293a5c6d535df35307/AndroidManifest.xml:17:1-22:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/relinker-1.3.1.aar/ee7db17326e724d5b5f273ce164b9f32/AndroidManifest.xml:2:1-7:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.2.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-core-1.2.0.aar/73aea0ecdd467efd10ee2e0b2ab4c8ce/AndroidManifest.xml:2:1-14:12
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:2:1-28:12
+		INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:2:1-28:12
+		INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:5:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:11:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:11:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.2.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-core-1.2.0.aar/73aea0ecdd467efd10ee2e0b2ab4c8ce/AndroidManifest.xml:11:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.2.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-core-1.2.0.aar/73aea0ecdd467efd10ee2e0b2ab4c8ce/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:5:22-76
+application
+ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:7:5-26:19
+MERGED from [com.android.support:design:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f2df77a915af02f846e4d4f4c1e50a14/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f2df77a915af02f846e4d4f4c1e50a14/AndroidManifest.xml:9:5-20
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:16:5-22:19
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:16:5-22:19
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/fa10e2b6613833cae9de8237bc5fd2b6/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/fa10e2b6613833cae9de8237bc5fd2b6/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/323f6cddce94c67e7a4ec7f5f325b389/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/323f6cddce94c67e7a4ec7f5f325b389/AndroidManifest.xml:10:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f8d8e49401baa7d563f22c6cb0762d8e/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f8d8e49401baa7d563f22c6cb0762d8e/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/1f6a371bbed21e8df268348e0d29c666/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/1f6a371bbed21e8df268348e0d29c666/AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:13:9-51
+activity#com.ripple.effects.fb.java.module.welcome.WelcomeActivity
+ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:14:19-65
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:18:27-74
+activity#com.ripple.effects.fb.java.module.detail.DetailActivity
+ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:21:9-66
+	android:name
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:21:19-63
+activity#com.ripple.effects.fb.java.module.login.LoginActivity
+ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:22:9-64
+	android:name
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:22:19-61
+activity#com.ripple.effects.fb.java.module.main.MainActivity
+ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:23:9-25:20
+	android:name
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml:23:19-59
+uses-sdk
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+MERGED from [:android-base-component-java] /Users/lanltn/fb-ripple-effects-android-java/android-base-component-java/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:android-base-component-java] /Users/lanltn/fb-ripple-effects-android-java/android-base-component-java/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/51822627397c25c322000be24eafe91f/AndroidManifest.xml:20:5-44
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9806fb9ed2ec195c5bf58480440d8d69/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/bc156df70485d58296e3984d67ecf78a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/bc156df70485d58296e3984d67ecf78a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f2df77a915af02f846e4d4f4c1e50a14/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f2df77a915af02f846e4d4f4c1e50a14/AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.6.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/butterknife-8.6.0.aar/e480e8c3ead9305ee949bd1d9bb65077/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.6.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/butterknife-8.6.0.aar/e480e8c3ead9305ee949bd1d9bb65077/AndroidManifest.xml:5:5-43
+MERGED from [com.auth0.android:jwtdecode:1.2.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/jwtdecode-1.2.0.aar/8370ed16a8f1f1b5094920980f64bd10/AndroidManifest.xml:7:5-9:41
+MERGED from [com.auth0.android:jwtdecode:1.2.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/jwtdecode-1.2.0.aar/8370ed16a8f1f1b5094920980f64bd10/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/e1d5f776b13765a8c379252f7414fd41/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.1.aar/e1d5f776b13765a8c379252f7414fd41/AndroidManifest.xml:19:5-43
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/fa10e2b6613833cae9de8237bc5fd2b6/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/fa10e2b6613833cae9de8237bc5fd2b6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/323f6cddce94c67e7a4ec7f5f325b389/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/323f6cddce94c67e7a4ec7f5f325b389/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/268a232d779abaf6733b20884d475203/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/268a232d779abaf6733b20884d475203/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/360b2329d1a6a7829cbfaabd7dbffda3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/360b2329d1a6a7829cbfaabd7dbffda3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/bb63702e39b7c0eb9484a33e9c6468ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/bb63702e39b7c0eb9484a33e9c6468ca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/6b9904ca0806bfcae602c34103444cd4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/6b9904ca0806bfcae602c34103444cd4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/4f34089070c45983a948ed6c7173237a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/4f34089070c45983a948ed6c7173237a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/c7033d38c6538d8bd4c9237f39e8f566/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/c7033d38c6538d8bd4c9237f39e8f566/AndroidManifest.xml:20:5-44
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-gestures:0.4.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-gestures-0.4.0.aar/fb029f7d7aedd999f3b897215fe9873c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-gestures:0.4.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-gestures-0.4.0.aar/fb029f7d7aedd999f3b897215fe9873c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:loader:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f9db8da921d5ba0deaa21299eccd34f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/f9db8da921d5ba0deaa21299eccd34f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/7827f6d2d5c6f017d1aaf49b952f24cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/7827f6d2d5c6f017d1aaf49b952f24cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/965a0580b7020ceb2709072b187de966/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/965a0580b7020ceb2709072b187de966/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e4adbff429bac1924155fc729bdfd00b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e4adbff429bac1924155fc729bdfd00b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/8caa81b328a221f042853938963e503a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/8caa81b328a221f042853938963e503a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/182fb707bba0cc868c017f9fdbb36cc2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/182fb707bba0cc868c017f9fdbb36cc2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/8eda37d8650e29316d934b3952f21553/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/8eda37d8650e29316d934b3952f21553/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/7e6e24db2edf242f5d71bf35439c97e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/7e6e24db2edf242f5d71bf35439c97e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7bae93bf2066427bf16375d105502f4f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f8d8e49401baa7d563f22c6cb0762d8e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f8d8e49401baa7d563f22c6cb0762d8e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/70ee46eb1b2b8ab63052d7ef04fdf75c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/70ee46eb1b2b8ab63052d7ef04fdf75c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/1e4fe67c32ec276dc40c193613b1e0cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/1e4fe67c32ec276dc40c193613b1e0cf/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/1f6a371bbed21e8df268348e0d29c666/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/1f6a371bbed21e8df268348e0d29c666/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/64fc19ecd43bcdc2f17cba8d93c7e851/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/64fc19ecd43bcdc2f17cba8d93c7e851/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/cef82d96f69759e9c0a3b8479131097c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/cef82d96f69759e9c0a3b8479131097c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/e0d8e1e737d0a7d16261f3d989df952d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/e0d8e1e737d0a7d16261f3d989df952d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/8469b7274b1c502ffb179f2e311c04e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/8469b7274b1c502ffb179f2e311c04e5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/ba2de5039ccedf947d16d3c26cf564e3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/ba2de5039ccedf947d16d3c26cf564e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/12a9cf90c3e1bb773621fa96a41913c1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/12a9cf90c3e1bb773621fa96a41913c1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6455a3a4cf75a6d7a2d82a2b486e1c9a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6455a3a4cf75a6d7a2d82a2b486e1c9a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1dce12b6bf9524aa7fbf7575c7c70ef9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1dce12b6bf9524aa7fbf7575c7c70ef9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cc396895976fb1293a5c6d535df35307/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/cc396895976fb1293a5c6d535df35307/AndroidManifest.xml:20:5-44
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/relinker-1.3.1.aar/ee7db17326e724d5b5f273ce164b9f32/AndroidManifest.xml:5:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.1] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/relinker-1.3.1.aar/ee7db17326e724d5b5f273ce164b9f32/AndroidManifest.xml:5:5-43
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.2.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-core-1.2.0.aar/73aea0ecdd467efd10ee2e0b2ab4c8ce/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.2.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-core-1.2.0.aar/73aea0ecdd467efd10ee2e0b2ab4c8ce/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:9:5-11:35
+	android:glEsVersion
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:10:9-41
+	android:required
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:11:9-32
+uses-feature#android.hardware.wifi
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:12:5-14:36
+	android:required
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:14:9-33
+	android:name
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:13:9-45
+uses-permission#android.permission.INTERNET
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:16:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:14:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:14:5-67
+	android:name
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:16:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:17:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:12:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:12:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.2.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-core-1.2.0.aar/73aea0ecdd467efd10ee2e0b2ab4c8ce/AndroidManifest.xml:12:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.2.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-core-1.2.0.aar/73aea0ecdd467efd10ee2e0b2ab4c8ce/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:17:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:18:5-76
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:13:5-76
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:13:5-76
+	android:name
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:7.3.2] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-sdk-7.3.2.aar/491d98b73fd207c2b4dad31da996c4d4/AndroidManifest.xml:18:22-73
+provider#com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:17:9-21:39
+	android:authorities
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:19:13-79
+	android:exported
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:20:13-37
+	android:initOrder
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:21:13-36
+	android:name
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.3.0] /Users/lanltn/.gradle/caches/transforms-1/files-1.1/mapbox-android-telemetry-4.3.0.aar/f89dcf518b0915fbad0436b514c08c8c/AndroidManifest.xml:18:13-93

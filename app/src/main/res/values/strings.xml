@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">SWEHOME</string>
+
+    <string name="tab_home">Home</string>
+    <string name="tab_popular">Popular</string>
+    <string name="tab_favorite">Favorite</string>
+    <string name="tab_save">Save</string>
+    <string name="tab_setting">Setting</string>
+    <string name="todo">todo</string>
+    <string name="empty">Empty</string>
+    <string name="content"><p>Joy House is in Giang Ta Chai village, Ta Van commune, 10km away from Sapa center, based on the idea of the H\'mong traditional House. Joy House is a combination of traditional house and homestay, that creates an environmentally friendly structure where is surrounded by nature with mountain, waterfall, river, bamboo forest and rice terraces.</p>\",  u\'<p>Give yourself an opportunity to listen the beautiful stories of the people around here, experience the local culture, play with the children, give a rest among the nature, find a joy and feel that we have come back.</p>\',  u\"<p>The waterfall, river and bamboo forest just 5 minutes walking where you can swim, meditate, yoga, read or relax among nature. We have a big garden with tea trees which are 80 years old and a lot of vegetables and herbs. Let\'s harvest the vegetables for dinners and make fresh green tea together.</p>\",  u\'<p>You can do trekking from our place with a local tour guider, who speaks perfect English. The trekking will go through different beautiful places (villages, bamboo forest, waterfall, rice terraces,...) which only known by locals.</p>\',  u\"<p>You also can join an indigo batik workshop with H\'Mong teacher, all products will be made by your hands with indigo process. After the workshop, you can keep your products as a memory from Sapa. Indigo batik fabric is the most unique fabric of H\\u2019Mong people. Batik is a resist dye technique created by wax drawn motifs. Traditionally, H\\u2019Mong people use hemp as a base fabric. The batik design is used for clothing and household items.</p></string>
+    <string name="text_login">Login</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_forgot_password">Forgot password</string>
+    <string name="text_not_register">Not Registered?</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="discover">Discover</string>
+    <string name="spots_to_stay">Spots to stay</string>
+    <string name="destinations">Destinations</string>
+    <string name="text_reviews">REVIEWS</string>
+    <string name="slogan_welcome">Home is not a place…\nIt’s a feeling.</string>
+    <string name="text_login_with_fb">Login with facebook</string>
+    <string name="text_description_sample">Fusce pulvinar poseure nisl. Non potitor Veridian is an aesthetic Hotels browsing app specially designed to fit right into the new iOS 12, iPhone and all mobile devices,  potitor Veridian is an aesthetic Hotels browsing app.</string>
+    <string name="temperator">TEMPERATOR</string>
+    <string name="wifi">WIFI</string>
+    <string name="pool">POOL</string>
+    <string name="favorite">Favorites</string>
+    <string name="filter_by">Filter by</string>
+    <string name="distance_from_you">DISTANCE FROM YOU</string>
+    <string name="highlights">HIGHLIGHTS</string>
+    <string name="text_set_filter">Set Filter</string>
+    <string name="all_splots">All spots</string>
+    <string name="all_destinations">All destinations</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="text_hello">HELLO!</string>
+    <string name="text_address">Da Nang, Viet Nam</string>
+    <string name="text_language">Language</string>
+    <string name="text_currency">Currency Unit</string>
+    <string name="text_measure">Measure Unit</string>
+    <string name="text_about">About</string>
+    <string name="text_faq_support"><![CDATA[FAQ & Support]]></string>
+    <string name="text_version">Version</string>
+    <string name="slogan_search">Find the best place to  spend your weekend upcoming…</string>
+    <string name="text_type_something">Type Something...</string>
+    <string name="slogan_login">Find the best pace to spend your upcoming weekend.</string>
+</resources>

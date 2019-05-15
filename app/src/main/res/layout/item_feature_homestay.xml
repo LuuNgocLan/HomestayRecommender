@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp">
+
+    <ImageView
+        android:id="@+id/feature_0"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_weather"
+        app:layout_constraintEnd_toStartOf="@id/feature_1"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperator"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@id/feature_0"
+        app:layout_constraintStart_toStartOf="@id/feature_0"
+        app:layout_constraintTop_toBottomOf="@id/feature_0" />
+
+    <ImageView
+        android:id="@+id/feature_1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_wifi"
+        app:layout_constraintEnd_toStartOf="@id/feature_2"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/feature_0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@id/feature_1"
+        app:layout_constraintStart_toStartOf="@id/feature_1"
+        app:layout_constraintTop_toBottomOf="@id/feature_1" />
+
+    <ImageView
+        android:id="@+id/feature_2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_swim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/feature_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pool"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@id/feature_2"
+        app:layout_constraintStart_toStartOf="@id/feature_2"
+        app:layout_constraintTop_toBottomOf="@id/feature_2" />
+
+</android.support.constraint.ConstraintLayout>

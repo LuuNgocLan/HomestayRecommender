@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/color_bg"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/color_bg_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status_bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="@string/filter_by"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_header">
+
+        <RelativeLayout
+            android:id="@+id/ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="#979797" />
+
+            <ImageView
+                android:id="@+id/ic_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/ic_distance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ic_distance"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ic_distance"
+                android:includeFontPadding="false"
+                android:text="@string/distance_from_you"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <SeekBar
+                android:id="@+id/seek_bar_distance"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_distance"
+                android:layout_marginLeft="@dimen/_50dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="@dimen/_50dp"
+                android:max="10"
+                android:progress="3" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/seek_bar_distance"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="22dp"
+                android:background="#979797" />
+
+            <ImageView
+                android:id="@+id/ic_highlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/ic_highlight" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ic_highlight"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ic_highlight"
+                android:includeFontPadding="false"
+                android:text="@string/highlights"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_distance"
+                android:layout_marginLeft="@dimen/_50dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="@dimen/_50dp"
+                android:max="10"
+                android:progress="3" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/seek_bar_distance"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="22dp"
+                android:background="#979797" />
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_set_filter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/bg_button_set_filter"
+        android:text="@string/text_set_filter"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

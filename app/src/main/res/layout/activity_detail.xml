@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.detail.DetailActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imv_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/homestay" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4D0D0C0C" />
+
+        <TextView
+            android:id="@+id/tv_star_homestay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginBottom="50dp"
+            android:includeFontPadding="false"
+            android:text="4.6"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:includeFontPadding="false"
+            android:text="/5"
+            android:textColor="#C8C9C8"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tv_star_homestay"
+            app:layout_constraintStart_toEndOf="@id/tv_star_homestay" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_star_selected"
+            app:layout_constraintBottom_toBottomOf="@id/tv_star_homestay"
+            app:layout_constraintStart_toEndOf="@id/tv_default"
+            app:layout_constraintTop_toTopOf="@id/tv_star_homestay" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_24dp"
+            android:layout_marginEnd="@dimen/_24dp"
+            android:layout_marginBottom="27dp"
+            android:background="@color/color_line_horizontal"
+            app:layout_constraintBottom_toTopOf="@id/tv_star_homestay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_price_homestay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginBottom="27dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:includeFontPadding="true"
+            android:text="125,000 vnd/Night"
+            android:textColor="#C8C9C8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/line1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name_homestay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:text="Hotel Celadon"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/tv_price_homestay"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/color_line_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+        <TextView
+            android:id="@+id/tv_review_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:includeFontPadding="false"
+            android:text="+1K"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/line2"
+            app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+        <TextView
+            android:id="@+id/text_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:includeFontPadding="false"
+            android:text="@string/text_reviews"
+            android:textColor="#C8C9C8"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/line2"
+            app:layout_constraintTop_toBottomOf="@id/tv_review_num" />
+        <com.ripple.effects.fb.java.widget.AvatarListCustomView
+            android:id="@+id/list_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/line2"
+            app:layout_constraintBottom_toBottomOf="@id/line2"
+            app:layout_constraintStart_toEndOf="@id/text_review"
+            android:layout_marginStart="10dp">
+
+        </com.ripple.effects.fb.java.widget.AvatarListCustomView>
+    </android.support.constraint.ConstraintLayout>
+
+    <include
+        layout="@layout/bottom_sheet"
+        />
+
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/_20dp"
+            android:layout_marginTop="@dimen/icon_toolbar_margin_top"
+            android:padding="5dp"
+            android:src="@drawable/ic_close" />
+
+        <ImageView
+            android:id="@+id/imv_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/icon_toolbar_margin_top"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_option" />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
