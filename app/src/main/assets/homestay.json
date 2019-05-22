@@ -1,0 +1,232 @@
+{
+    "code": 200,
+    "status": "Success",
+    "data": {
+        "count": 32,
+        "homestays": [
+            {
+                "_id": "5cdfc3319c9633df04fefd9c",
+                "name": "Lazycrazy homestay",
+                "price": "From ₫100,000 per night",
+                "review_score": 5,
+                "image_center": "https://res-4.cloudinary.com/homestay/image/private/s--cvwnxLGV--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/886962/1512810511_original.jpg"
+            },
+            {
+                "_id": "5cdfc3329c9633df04fefd9f",
+                "name": "Friendly family with the hearttreat",
+                "price": "From ₫198,000 per night",
+                "review_score": 4.5,
+                "image_center": "https://res-5.cloudinary.com/homestay/image/private/s--jvQYj4Z6--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/209121/1408010532_original.JPG"
+            },
+            {
+                "_id": "5cdfc3329c9633df04fefda2",
+                "name": "Hoan Kiem Lake",
+                "price": "From ₫166,667 per night",
+                "review_score": 4.9,
+                "image_center": "https://res-2.cloudinary.com/homestay/image/private/s--URYiDuwO--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/962138/1523931883_original.jpg"
+            },
+            {
+                "_id": "5cdfc3329c9633df04fefda5",
+                "name": "Nice room in the center of Hanoi",
+                "price": "From ₫277,000 per night",
+                "review_score": 5,
+                "image_center": "https://res-4.cloudinary.com/homestay/image/private/s--gxYD6y2C--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/889983/1513256624_original.JPG"
+            },
+            {
+                "_id": "5cdfc3339c9633df04fefda8",
+                "name": "Authentic of real life in HCMC",
+                "price": "From ₫600,000 per night",
+                "review_score": 4.8,
+                "image_center": "https://res-3.cloudinary.com/homestay/image/private/s--j4fS-jN6--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/249085/1412572260_original.jpg"
+            },
+            {
+                "_id": "5cdfc3339c9633df04fefdab",
+                "name": "Studio apartment near West Lake",
+                "price": "From ₫300,000 per night",
+                "review_score": 5,
+                "image_center": "https://res-2.cloudinary.com/homestay/image/private/s--uaRgF34u--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/957091/1523154767_original.JPG"
+            },
+            {
+                "_id": "5cdfc3339c9633df04fefdae",
+                "name": "Nice apartment and host",
+                "price": "From ₫150,000 per night",
+                "review_score": 5,
+                "image_center": "https://res-2.cloudinary.com/homestay/image/private/s--zhSsRpUx--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/817203/1503025399_original.jpg"
+            },
+            {
+                "_id": "5cdfc3339c9633df04fefdb1",
+                "name": "Friendly, Trustworthy, Hospitality",
+                "price": "From ₫200,000 per night",
+                "review_score": 4.6,
+                "image_center": "https://res-2.cloudinary.com/homestay/image/private/s--5WM8T784--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/334150/1430884394_original.jpg"
+            },
+            {
+                "_id": "5cdfc3339c9633df04fefdb4",
+                "name": "Experience Saigon with locals",
+                "price": "From ₫279,700 per night",
+                "review_score": 5,
+                "image_center": "https://res-4.cloudinary.com/homestay/image/private/s--4UwRT2by--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/626631/1475602770_original.jpg"
+            },
+            {
+                "_id": "5cdfc3349c9633df04fefdb7",
+                "name": "Woody riverside house in Sapa VN",
+                "price": "From ₫100,000 per night",
+                "review_score": 4.2,
+                "image_center": "https://res-5.cloudinary.com/homestay/image/private/s--n9x2-uKO--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/307930/1426419997_original.jpg"
+            },
+            {
+                "_id": "5cdfc3349c9633df04fefdba",
+                "name": "Friendly family, City center food",
+                "price": "From ₫240,000 per night",
+                "review_score": 5,
+                "image_center": "https://res-2.cloudinary.com/homestay/image/private/s--mPdF9F74--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/451207/1446359309_original.JPG"
+            },
+            {
+                "_id": "5cdfc3349c9633df04fefdbd",
+                "name": "SINA Houses",
+                "price": "From $10 per night",
+                "review_score": 5,
+                "image_center": "https://res-3.cloudinary.com/homestay/image/private/s--bHDPRod0--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/517210/1458548017_original.JPG"
+            },
+            {
+                "_id": "5cdfc3349c9633df04fefdc0",
+                "name": "Bedroom rental Accommodation",
+                "price": "From ₫211,667 per night",
+                "review_score": 5,
+                "image_center": "https://res-3.cloudinary.com/homestay/image/private/s--eK9Cj6yO--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/620495/1474595140_original.JPG"
+            },
+            {
+                "_id": "5cdfc3349c9633df04fefdc3",
+                "name": "Green Field Homestay",
+                "price": "From $4 per night",
+                "review_score": 5,
+                "image_center": "https://res-3.cloudinary.com/homestay/image/private/s--z-A8obde--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/788649/1499429277_original.jpg"
+            },
+            {
+                "_id": "5cdfc3349c9633df04fefdc6",
+                "name": "Joy House Sapa",
+                "price": "From $22 per night",
+                "review_score": 5,
+                "image_center": "https://res-4.cloudinary.com/homestay/image/private/s--ewgttsgW--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/1034158/1536292823_original.jpg"
+            },
+            {
+                "_id": "5cdfc3359c9633df04fefdc9",
+                "name": "Great Hide-away from Hustle Centre",
+                "price": "From ₫294,000 per night",
+                "review_score": 4,
+                "image_center": "https://res-2.cloudinary.com/homestay/image/private/s--13AC-TSA--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/290162/1422367364_original.jpg"
+            },
+            {
+                "_id": "5cdfc3359c9633df04fefdcc",
+                "name": "Friendly Jasmine Homestay ",
+                "price": "From $24 per night",
+                "review_score": 5,
+                "image_center": "https://res-1.cloudinary.com/homestay/image/private/s--Qph0tk1D--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/244742/1411896789_original.JPG"
+            },
+            {
+                "_id": "5cdfc3359c9633df04fefdcf",
+                "name": "Daisy Homestay",
+                "price": "From ₫130,000 per night",
+                "review_score": 4,
+                "image_center": "https://res-4.cloudinary.com/homestay/image/private/s--7jYs5IpJ--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/229916/1410190979_original.jpg"
+            },
+            {
+                "_id": "5cdfc3359c9633df04fefdd2",
+                "name": "Happy Family Guesthouse",
+                "price": "From $11 per night",
+                "review_score": 4.7,
+                "image_center": "https://res-3.cloudinary.com/homestay/image/private/s--FEON5i9X--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/129381/1404207587_original.jpeg"
+            },
+            {
+                "_id": "5cdfc3359c9633df04fefdd5",
+                "name": "Interior Studio in center of HCMC",
+                "price": "From $22 per night",
+                "image_center": "https://res-1.cloudinary.com/homestay/image/private/s--ZIZ3y0ir--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/782699/1498549291_original.jpg"
+            },
+            {
+                "_id": "5cdfc3359c9633df04fefdd8",
+                "name": "The Penguin Friendly House ",
+                "price": "From $12 per night",
+                "review_score": 5,
+                "image_center": "https://res-5.cloudinary.com/homestay/image/private/s--Ue1tKJWo--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/447698/1445785663_original.jpg"
+            },
+            {
+                "_id": "5cdfc3359c9633df04fefddb",
+                "name": "Ninh Binh Family Homestay",
+                "price": "From ₫68,000 per night",
+                "review_score": 5,
+                "image_center": "https://res-4.cloudinary.com/homestay/image/private/s--JvTbRYvf--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/648043/1479199948_original.JPG"
+            },
+            {
+                "_id": "5cdfc3359c9633df04fefdde",
+                "name": "lovely family from DaNang - VietNam",
+                "price": "From $15 per night",
+                "review_score": 4.8,
+                "image_center": "https://res-4.cloudinary.com/homestay/image/private/s--C8EBUcRe--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/187114/1405616898_original.JPG"
+            },
+            {
+                "_id": "5cdfc3359c9633df04fefde1",
+                "name": "Ann Nhien - A green cozy house ",
+                "price": "From ₫360,000 per night",
+                "review_score": 5,
+                "image_center": "https://res-4.cloudinary.com/homestay/image/private/s--68jLWgQl--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/808685/1502019442_original.jpg"
+            },
+            {
+                "_id": "5cdfc3359c9633df04fefde4",
+                "name": "Hoian Joy Homestay - Accommodation",
+                "price": "From $15 per night",
+                "review_score": 4.7,
+                "image_center": "https://res-5.cloudinary.com/homestay/image/private/s--hDMVgWWP--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/257052/1414557471_original.JPG"
+            },
+            {
+                "_id": "5cdfc3369c9633df04fefde7",
+                "name": "Galaxy Homestay in Hoi An city",
+                "price": "From $15 per night",
+                "review_score": 5,
+                "image_center": "https://res-3.cloudinary.com/homestay/image/private/s--9ZPKSiWN--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/433468/1443250093_original.JPG"
+            },
+            {
+                "_id": "5cdfc3369c9633df04fefdea",
+                "name": " Lang Co Co Homestay ",
+                "price": "From ₫324,000 per night",
+                "review_score": 5,
+                "image_center": "https://res-2.cloudinary.com/homestay/image/private/s--vLYGO6Fu--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/833789/1505320929_original.JPG"
+            },
+            {
+                "_id": "5cdfc3369c9633df04fefded",
+                "name": "Economy room in new center Hanoi",
+                "price": "From ₫173,333 per night",
+                "review_score": 5,
+                "image_center": "https://res-4.cloudinary.com/homestay/image/private/s--QyAQ_PPG--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/875899/1511360377_original.JPG"
+            },
+            {
+                "_id": "5cdfc3369c9633df04fefdf0",
+                "name": "Rose Homestay",
+                "price": "From ₫168,000 per night",
+                "review_score": 5,
+                "image_center": "https://res-4.cloudinary.com/homestay/image/private/s--4Ale0DVW--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/977382/1526305404_original.JPG"
+            },
+            {
+                "_id": "5cdfc3369c9633df04fefdf3",
+                "name": "Clean and safe homestay ",
+                "price": "From $7 per night",
+                "review_score": 5,
+                "image_center": "https://res-2.cloudinary.com/homestay/image/private/s--gsId0WU---/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/757716/1495065459_original.JPG"
+            },
+            {
+                "_id": "5cdfc3369c9633df04fefdf6",
+                "name": "Cozy Ginger Homestay in Ha Long Bay",
+                "price": "From ₫163,333 per night",
+                "review_score": 5,
+                "image_center": "https://res-5.cloudinary.com/homestay/image/private/s--EXmF9PlW--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/652349/1479999367_original.JPG"
+            },
+            {
+                "_id": "5cdfc3369c9633df04fefdf9",
+                "name": "The Purple Hue Homestay",
+                "price": "From ₫385,714 per night",
+                "review_score": 5,
+                "image_center": "https://res-1.cloudinary.com/homestay/image/private/s--_AkHmLUJ--/c_fit,f_auto,fl_lossy,h_800,q_auto:best,w_800/v1/homestay/production/media/property_pictures/775494/1497500221_original.JPG"
+            }
+        ]
+    }
+}

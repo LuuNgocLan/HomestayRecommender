@@ -16,8 +16,8 @@ public class MapPresenter implements IMapContract.IMapPresenter {
     }
 
     @Override
-    public void onCreate(IBaseView iBaseView) {
-        this.mIPopularView = (IMapContract.IMapView) iBaseView;
+    public void onCreate(IMapContract.IMapView iBaseView) {
+        this.mIPopularView = iBaseView;
         isRefresh = true;
     }
 

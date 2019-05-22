@@ -14,7 +14,7 @@ public interface IFavoriteContract {
         void showMessage();
     }
 
-    interface IFavoritePresenter extends IBasePresenter {
+    interface IFavoritePresenter extends IBasePresenter<IFavoriteView> {
         void onStart();
 
         void fetchData();

@@ -1,7 +1,7 @@
 package com.base.java.mvp;
 
-public interface IBasePresenter {
-    void onCreate(IBaseView iBaseView);
+public interface IBasePresenter<V>{
+    void onCreate(V iBaseView);
 
     void onDestroy();
 }

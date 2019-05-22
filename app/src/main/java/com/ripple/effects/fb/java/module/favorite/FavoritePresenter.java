@@ -16,8 +16,8 @@ public class FavoritePresenter implements IFavoriteContract.IFavoritePresenter {
     }
 
     @Override
-    public void onCreate(IBaseView iBaseView) {
-        this.mIFavoriteView = (IFavoriteContract.IFavoriteView) iBaseView;
+    public void onCreate(IFavoriteContract.IFavoriteView iBaseView) {
+        this.mIFavoriteView = iBaseView;
         isRefresh = true;
     }
 

@@ -9,7 +9,7 @@ public interface IEmptyContract {
 
     }
 
-    interface IEmptyPresenter extends IBasePresenter {
+    interface IEmptyPresenter extends IBasePresenter<IEmptyView> {
 
     }
 }

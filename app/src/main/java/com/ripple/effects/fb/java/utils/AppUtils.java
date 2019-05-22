@@ -17,6 +17,8 @@ import android.view.WindowManager;
 
 public final class AppUtils {
 
+    public static String ID_HOMESTAY = "ID_HOMESTAY";
+
     public static void openPlayStoreForApp(Context context, String link) {
         final String appPackageName = context.getPackageName();
         try {

@@ -30,22 +30,18 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.View
     @Override
     public RecommendAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         return new ViewHolder(LayoutInflater.from(mContext)
-                .inflate(R.layout.item_landscape_homestay, viewGroup, false));
+                .inflate(R.layout.item_near_homestay, viewGroup, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
-        if (position == 0) {
-            viewHolder.setIsRecyclable(false);
-            viewHolder.setMarginLeft(40);
-        }
 
         viewHolder.mImageViewFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //todo: update status favorite of homestay item
                 viewHolder.mImageViewFavorite.setSelected((new Random()).nextBoolean());
-                mIBaseItemListener.onClickFavoriteHomestay(1,true);
+                mIBaseItemListener.onClickFavoriteHomestay(1, true);
 
             }
         });
@@ -53,7 +49,7 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.View
         viewHolder.mCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mIBaseItemListener.openDetailHomestay(1);
+                mIBaseItemListener.openDetailHomestay("");
             }
         });
     }
@@ -80,7 +76,7 @@ public class RecommendAdapter extends RecyclerView.Adapter<RecommendAdapter.View
         }
 
         public void setMarginLeft(int margin) {
-            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams((int) dpToPx(344), (int) dpToPx(187));
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams((int) dpToPx(215), (int) dpToPx(260));
             lp.setMargins((int) dpToPx(margin), 0, (int) dpToPx(15), (int) dpToPx(15));
             mCardView.setLayoutParams(lp);
         }

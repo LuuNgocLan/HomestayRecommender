@@ -56,7 +56,7 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.ViewHo
         viewHolder.mCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mIBaseItemListener.openDetailHomestay(1);
+                mIBaseItemListener.openDetailHomestay("");
             }
         });
     }

@@ -9,7 +9,7 @@ public interface IMainContract {
 
     }
 
-    interface IMainPresenter extends IBasePresenter {
+    interface IMainPresenter extends IBasePresenter<IMainView> {
         void onStart();
 
         void onStop();

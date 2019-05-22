@@ -108,6 +108,7 @@
         android:layout_marginTop="@dimen/_30dp"
         android:background="@drawable/bg_button_login_shadow"
         android:text="@string/text_login"
+        android:fontFamily="@font/montserrat_medium"
         android:textAllCaps="false"
         android:textColor="@color/color_text_login"
         app:layout_constraintTop_toBottomOf="@+id/edt_password"

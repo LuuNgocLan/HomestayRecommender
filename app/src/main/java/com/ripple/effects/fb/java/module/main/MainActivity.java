@@ -10,13 +10,11 @@ import com.base.java.mvp.BaseActivity;
 import com.base.java.mvp.IBasePresenter;
 import com.ripple.effects.fb.java.R;
 import com.ripple.effects.fb.java.module.base.ParentContainerFragment;
-import com.ripple.effects.fb.java.module.discover.AllSpotsFragment;
 import com.ripple.effects.fb.java.module.favorite.FavoriteFragment;
 import com.ripple.effects.fb.java.module.discover.DiscoverFragment;
 import com.ripple.effects.fb.java.module.main.adapter.ViewPagerAdapter;
 import com.ripple.effects.fb.java.module.popular.MapFragment;
 import com.ripple.effects.fb.java.module.profile.ProfileFragment;
-import com.ripple.effects.fb.java.module.setting.SettingFragment;
 import com.ripple.effects.fb.java.widget.CustomTab;
 import com.ripple.effects.fb.java.widget.MainViewPager;
 

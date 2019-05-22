@@ -16,7 +16,7 @@ public interface IMapContract {
     }
 
     interface IMapPresenter
-            extends IBasePresenter {
+            extends IBasePresenter<IMapView> {
         void onStart();
 
         void fetchData();

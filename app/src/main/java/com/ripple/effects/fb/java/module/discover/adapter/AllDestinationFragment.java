@@ -56,7 +56,7 @@ public class AllDestinationFragment extends BaseFragment implements IBaseItemLis
     }
 
     @Override
-    public void openDetailHomestay(int idHomestay) {
+    public void openDetailHomestay(String idHomestay) {
 
     }
 

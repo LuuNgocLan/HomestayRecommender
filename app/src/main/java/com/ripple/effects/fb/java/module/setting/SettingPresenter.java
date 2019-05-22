@@ -14,7 +14,7 @@ public class SettingPresenter implements ISettingContract.ISettingPresenter {
     }
 
     @Override
-    public void onCreate(IBaseView iBaseView) {
+    public void onCreate(ISettingContract.ISettingView iBaseView) {
         this.mISettingView = (ISettingContract.ISettingView) iBaseView;
     }
 

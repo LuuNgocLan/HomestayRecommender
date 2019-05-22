@@ -1,4 +1,4 @@
-package com.ripple.effects.fb.java.module.discover;
+package com.ripple.effects.fb.java.module.search;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

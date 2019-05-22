@@ -44,4 +44,5 @@
     <string name="slogan_search">Find the best place to  spend your weekend upcoming…</string>
     <string name="text_type_something">Type Something...</string>
     <string name="slogan_login">Find the best pace to spend your upcoming weekend.</string>
+    <string name="error_loading_map">Error loading map!</string>
 </resources>

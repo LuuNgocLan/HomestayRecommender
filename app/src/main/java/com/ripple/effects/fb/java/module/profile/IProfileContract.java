@@ -10,7 +10,7 @@ public interface IProfileContract {
 
     }
 
-    interface IProfilePresenter extends IBasePresenter {
+    interface IProfilePresenter extends IBasePresenter<IProfileView> {
 
     }
 }

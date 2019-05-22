@@ -27,6 +27,7 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="20dp"
             android:text="@string/filter_by"
+            android:fontFamily="@font/montserrat_bold"
             android:textColor="@android:color/black"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -70,6 +71,7 @@
                 android:layout_toRightOf="@+id/ic_distance"
                 android:includeFontPadding="false"
                 android:text="@string/distance_from_you"
+                android:fontFamily="@font/montserrat_medium"
                 android:textColor="#000"
                 android:textSize="12sp" />
 
@@ -112,6 +114,7 @@
                 android:layout_toRightOf="@+id/ic_highlight"
                 android:includeFontPadding="false"
                 android:text="@string/highlights"
+                android:fontFamily="@font/montserrat_medium"
                 android:textColor="#000"
                 android:textSize="12sp" />
 
@@ -150,6 +153,7 @@
         android:layout_marginBottom="35dp"
         android:background="@drawable/bg_button_set_filter"
         android:text="@string/text_set_filter"
+        android:fontFamily="@font/montserrat_medium"
         android:textAllCaps="false"
         android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"

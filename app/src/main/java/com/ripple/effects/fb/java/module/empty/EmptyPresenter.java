@@ -14,8 +14,8 @@ public class EmptyPresenter implements IEmptyContract.IEmptyPresenter {
     }
 
     @Override
-    public void onCreate(IBaseView iBaseView) {
-        this.mIEmptyView = (IEmptyContract.IEmptyView) iBaseView;
+    public void onCreate(IEmptyContract.IEmptyView iBaseView) {
+        this.mIEmptyView =  iBaseView;
     }
 
     @Override

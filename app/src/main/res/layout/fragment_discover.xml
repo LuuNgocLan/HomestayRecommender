@@ -29,6 +29,7 @@
         android:textColor="@android:color/black"
         android:textSize="17sp"
         android:textStyle="bold"
+        android:fontFamily="@font/montserrat_bold"
         app:layout_constraintBottom_toBottomOf="@id/bg_header"
         app:layout_constraintEnd_toEndOf="@id/bg_header"
         app:layout_constraintStart_toStartOf="@id/bg_header"
@@ -74,7 +75,7 @@
             <ImageView
                 android:id="@+id/bg_recommendation"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="370dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/bg_image"
                 app:layout_constraintStart_toStartOf="parent"
@@ -102,11 +103,11 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <android.support.v7.widget.RecyclerView
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
                 android:id="@+id/rv_recommend"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_recommendation" />
 
@@ -116,7 +117,7 @@
                 android:layout_height="375dp"
                 android:layout_marginTop="30dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rv_recommend" />
+                app:layout_constraintTop_toBottomOf="@id/bg_recommendation" />
 
             <TextView
                 android:id="@+id/tv_all_spots"
@@ -168,9 +169,9 @@
             <ImageView
                 android:id="@+id/bg_place"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="320dp"
                 android:layout_marginTop="@dimen/_30dp"
-                android:layout_marginBottom="70dp"
+                android:layout_marginBottom="50dp"
                 android:background="@drawable/bg_image"
                 android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"

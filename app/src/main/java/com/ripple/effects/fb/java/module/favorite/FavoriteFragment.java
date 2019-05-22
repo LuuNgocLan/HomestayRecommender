@@ -116,7 +116,7 @@ public class FavoriteFragment
     }
 
     @Override
-    public void openDetailHomestay(int idHomestay) {
+    public void openDetailHomestay(String idHomestay) {
 
     }
 

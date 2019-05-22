@@ -1,29 +1,18 @@
 package com.ripple.effects.fb.java.module.detail;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
-import android.support.transition.Transition;
-import android.support.transition.TransitionManager;
-import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.Toast;
 
-import com.base.java.core.utils.DimenUtils;
+import com.base.java.core.helper.ImageHelper;
 import com.base.java.mvp.BaseActivity;
 import com.base.java.mvp.IBasePresenter;
-import com.mapbox.mapboxsdk.Mapbox;
-import com.mapbox.mapboxsdk.maps.MapView;
-import com.mapbox.mapboxsdk.maps.MapboxMap;
-import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
-import com.mapbox.mapboxsdk.maps.Style;
 import com.ripple.effects.fb.java.R;
-import com.ripple.effects.fb.java.models.Homestay;
+import com.ripple.effects.fb.java.models.detailhomestay.Homestay;
 import com.ripple.effects.fb.java.module.detail.adapter.DetailHomestayAdapter;
 import com.ripple.effects.fb.java.module.detail.adapter.HomestayDetailSection;
 
@@ -33,14 +22,13 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.OnTouch;
 
-public class DetailActivity extends BaseActivity {
+import static com.ripple.effects.fb.java.utils.AppUtils.ID_HOMESTAY;
+
+public class DetailActivity extends BaseActivity implements IDetailContract.IDetailView {
 
     @BindView(R.id.imv_center)
     ImageView mImvCenter;
-    @BindView(R.id.bottom_sheet)
-    LinearLayout mLlBottomSheet;
     @BindView(R.id.rvDetail)
     RecyclerView mRvDetailHomeStay;
     @BindView(R.id.imv_close)
@@ -48,58 +36,37 @@ public class DetailActivity extends BaseActivity {
     @BindView(R.id.imv_option)
     ImageView mImvOption;
 
-    BottomSheetBehavior mBottomSheetBehavior;
-
     private DetailPresenter mDetailPresenter;
     private DetailHomestayAdapter mAdapter;
     private Homestay mHomestay = new Homestay();
     private List<HomestayDetailSection> mSections = new ArrayList<>();
 
-    private boolean mIsShowBottomSheet = false;
+    private String mIdHomestay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
+        setContentView(R.layout.activity_detail_new);
         ButterKnife.bind(this);
 
+        getArgumentIdHomestay();
+
         mDetailPresenter = new DetailPresenter(this);
-        mBottomSheetBehavior = BottomSheetBehavior.from(mLlBottomSheet);
-        initRecyclerView(savedInstanceState);
+        mDetailPresenter.onCreate(this);
         setEvent();
+
+        /**
+         * this id get from the list homestay
+         */
+        mDetailPresenter.loadData(mIdHomestay);
+    }
+
+    private void getArgumentIdHomestay() {
+        mIdHomestay = getIntent().getStringExtra(ID_HOMESTAY);
     }
 
     private void setEvent() {
 
-        mBottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
-            @Override
-            public void onStateChanged(@NonNull View bottomSheet, int newState) {
-                switch (newState) {
-                    case BottomSheetBehavior.STATE_HIDDEN:
-                        break;
-                    case BottomSheetBehavior.STATE_EXPANDED:
-                        mBottomSheetBehavior.setFitToContents(true);
-                        mRvDetailHomeStay.smoothScrollToPosition(0);
-                        mLlBottomSheet.setBackgroundColor(getResources().getColor(R.color.paint_white));
-                        setColorIconToolbar(BottomSheetBehavior.STATE_EXPANDED);
-                        break;
-                    case BottomSheetBehavior.STATE_COLLAPSED:
-                        mLlBottomSheet.setBackground(getResources().getDrawable(R.drawable.background_bottomsheet));
-                        mRvDetailHomeStay.smoothScrollToPosition(0);
-                        setColorIconToolbar(BottomSheetBehavior.STATE_COLLAPSED);
-                        break;
-                    case BottomSheetBehavior.STATE_DRAGGING:
-                        break;
-                    case BottomSheetBehavior.STATE_SETTLING:
-                        break;
-                }
-            }
-
-            @Override
-            public void onSlide(@NonNull View view, float v) {
-
-            }
-        });
     }
 
     private void setColorIconToolbar(int state) {
@@ -115,10 +82,10 @@ public class DetailActivity extends BaseActivity {
 
     }
 
-    private void initRecyclerView(Bundle savedInstanceState) {
+    private void initRecyclerView() {
         initSections();
-        mAdapter = new DetailHomestayAdapter(savedInstanceState, getApplicationContext(), mHomestay, mSections);
-        mRvDetailHomeStay.setLayoutManager(new LinearLayoutManager(mLlBottomSheet.getContext(),
+        mAdapter = new DetailHomestayAdapter( getApplicationContext(), mHomestay, mSections);
+        mRvDetailHomeStay.setLayoutManager(new LinearLayoutManager(getApplicationContext(),
                 LinearLayoutManager.VERTICAL, false));
         mRvDetailHomeStay.setAdapter(mAdapter);
     }
@@ -137,7 +104,7 @@ public class DetailActivity extends BaseActivity {
 
     @Override
     protected int getLayoutResourceId() {
-        return R.layout.activity_detail;
+        return R.layout.activity_detail_new;
     }
 
     @OnClick(R.id.imv_close)
@@ -152,15 +119,51 @@ public class DetailActivity extends BaseActivity {
 
     @OnClick(R.id.imv_center)
     public void onClickImage(View view) {
-        if (!mIsShowBottomSheet) {
-            mBottomSheetBehavior.setPeekHeight((int) DimenUtils.dpToPx(336));
-            mRvDetailHomeStay.scrollToPosition(0);
-            TransitionManager.beginDelayedTransition(mLlBottomSheet);
-        } else {
-            mBottomSheetBehavior.setPeekHeight((int) DimenUtils.dpToPx(0));
-            TransitionManager.beginDelayedTransition(mLlBottomSheet);
-        }
-        mIsShowBottomSheet = !mIsShowBottomSheet;
+
     }
 
+    @Override
+    public void onSucces(Homestay homestay) {
+        if (homestay != null) {
+            if (homestay.getImageCenter() != null) {
+                ImageHelper.load(getApplicationContext(), mImvCenter, homestay.getImageCenter());
+
+            }
+            mHomestay = homestay;
+            initRecyclerView();
+
+//            if (!TextUtils.isEmpty(homestay.getName())) {
+//                mTvNameHomestay.setText(homestay.getName());
+//            }
+//            if (!TextUtils.isEmpty(homestay.getNumReviews())) {
+//                mTvReviewNum.setText(homestay.getNumReviews());
+//            }
+//            if (!TextUtils.isEmpty(homestay.getReviewScore() + "")) {
+//                mTvStarHomestay.setText(homestay.getReviewScore() + "");
+//            }
+//            if (!TextUtils.isEmpty(homestay.getPrice())) {
+//                mTvPriceHomestay.setText(homestay.getPrice());
+//            }
+//
+//            if (homestay.getReview() != null && homestay.getReview().size() > 0) {
+//                List<String> imageUrl = new ArrayList<>();
+//                for (int i = 0; i < homestay.getReview().size(); i++) {
+//                    imageUrl.add(homestay.getReview().get(i).getAvatar());
+//                }
+//                mListAvatar.setDataImage(imageUrl);
+//            }
+
+
+        }
+    }
+
+    @Override
+    public void onError() {
+        Toast.makeText(getApplicationContext(), "Error from server!", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onShowloading() {
+
+    }
 }

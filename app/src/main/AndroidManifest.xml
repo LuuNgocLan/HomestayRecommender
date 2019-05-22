@@ -3,6 +3,7 @@
     package="com.ripple.effects.fb.java">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,16 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar">
-        <activity android:name=".module.welcome.WelcomeActivity">
+        <activity android:name=".module.welcome.WelcomeActivity"></activity>
+        <activity android:name=".module.detail.DetailActivity" />
+        <activity android:name=".module.login.LoginActivity" />
+        <activity android:name=".module.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".module.detail.DetailActivity" />
-        <activity android:name=".module.login.LoginActivity" />
-        <activity android:name=".module.main.MainActivity" />
     </application>
 
 </manifest>

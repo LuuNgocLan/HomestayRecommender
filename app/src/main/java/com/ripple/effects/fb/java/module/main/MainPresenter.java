@@ -16,8 +16,8 @@ public class MainPresenter implements IMainContract.IMainPresenter {
     }
 
     @Override
-    public void onCreate(IBaseView iBaseView) {
-        this.mIMainView = (IMainContract.IMainView) iBaseView;
+    public void onCreate(IMainContract.IMainView iBaseView) {
+        this.mIMainView = iBaseView;
     }
 
     @Override

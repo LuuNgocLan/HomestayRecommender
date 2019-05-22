@@ -24,6 +24,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:text="@string/favorite"
+            android:fontFamily="@font/montserrat_bold"
             android:textColor="@android:color/black"
             android:textSize="17sp"
             android:textStyle="bold"

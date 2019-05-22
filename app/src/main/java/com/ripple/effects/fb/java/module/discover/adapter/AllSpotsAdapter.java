@@ -4,14 +4,23 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.base.java.core.helper.ImageHelper;
 import com.ripple.effects.fb.java.R;
+import com.ripple.effects.fb.java.models.homestay.Homestay;
 import com.ripple.effects.fb.java.module.base.IBaseItemListener;
+
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.base.java.core.utils.DimenUtils.dpToPx;
 
@@ -20,6 +29,13 @@ public class AllSpotsAdapter extends RecyclerView.Adapter<AllSpotsAdapter.ViewHo
     public Context mContext;
     public IBaseItemListener mIBaseItemListener;
     public int mMarginLeftFirstItem = 0;
+    private List<Homestay> mHomestayList;
+
+    public AllSpotsAdapter(Context context, int marginLeftFirstItem, List<Homestay> homestays) {
+        mContext = context;
+        mMarginLeftFirstItem = marginLeftFirstItem;
+        mHomestayList = homestays;
+    }
 
     public AllSpotsAdapter(Context context, int marginLeftFirstItem) {
         mContext = context;
@@ -46,19 +62,23 @@ public class AllSpotsAdapter extends RecyclerView.Adapter<AllSpotsAdapter.ViewHo
         } else {
             viewHolder.setMargin(10, 10, 5, 5);
         }
+        if (mHomestayList != null) {
+            viewHolder.bindView(mHomestayList.get(position));
 
-        viewHolder.mImageViewFavorite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mIBaseItemListener.onClickFavoriteHomestay(1, true);
-            }
-        });
-        viewHolder.mCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mIBaseItemListener.openDetailHomestay(1);
-            }
-        });
+            viewHolder.mImageViewFavorite.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mIBaseItemListener.onClickFavoriteHomestay(1, true);
+                }
+            });
+            viewHolder.mCardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (mHomestayList.get(position) != null)
+                        mIBaseItemListener.openDetailHomestay(mHomestayList.get(position).getId());
+                }
+            });
+        }
 
     }
 
@@ -68,7 +88,9 @@ public class AllSpotsAdapter extends RecyclerView.Adapter<AllSpotsAdapter.ViewHo
 
     @Override
     public int getItemCount() {
-        return 10;
+        if (mHomestayList != null)
+            return mHomestayList.size();
+        return 8;
     }
 
     public class ViewHolder
@@ -76,11 +98,34 @@ public class AllSpotsAdapter extends RecyclerView.Adapter<AllSpotsAdapter.ViewHo
 
         CardView mCardView;
         ImageView mImageViewFavorite;
+        ImageView mImvCenter;
+        TextView mTvNameHomestay;
+        TextView mTvPrice;
+        TextView mTvScore;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             mCardView = itemView.findViewById(R.id.cardview);
             mImageViewFavorite = itemView.findViewById(R.id.imv_favorite);
+            mTvNameHomestay = itemView.findViewById(R.id.tv_name_homestay);
+            mTvPrice = itemView.findViewById(R.id.tv_price);
+            mTvScore = itemView.findViewById(R.id.tv_star_num);
+            mImvCenter = itemView.findViewById(R.id.iv_homestay);
+        }
+
+        public void bindView(Homestay homestay) {
+            if (!TextUtils.isEmpty(homestay.getName())) {
+                mTvNameHomestay.setText(homestay.getName());
+            }
+            if (!TextUtils.isEmpty(homestay.getReviewScore() + "")) {
+                mTvScore.setText(homestay.getReviewScore() + "");
+            }
+            if (!TextUtils.isEmpty(homestay.getPrice())) {
+                mTvPrice.setText(homestay.getPrice());
+            }
+            if (!TextUtils.isEmpty(homestay.getImageCenter())) {
+                ImageHelper.load(mContext, mImvCenter, R.drawable.img_center, homestay.getImageCenter());
+            }
         }
 
         public void setMargin(int left, int top, int right, int bottom) {
@@ -88,5 +133,6 @@ public class AllSpotsAdapter extends RecyclerView.Adapter<AllSpotsAdapter.ViewHo
             lp.setMargins((int) dpToPx(left), (int) dpToPx(top), (int) dpToPx(right), (int) dpToPx(bottom));
             mCardView.setLayoutParams(lp);
         }
+
     }
 }

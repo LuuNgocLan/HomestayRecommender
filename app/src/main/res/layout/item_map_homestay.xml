@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:mapbox="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="360dp"
-    android:background="#fff"
     android:paddingBottom="@dimen/_30dp">
 
     <View
@@ -27,7 +25,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/item_mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:background="#73D8D8D8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon" />
+
+    <LinearLayout
+        android:id="@+id/view_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/item_mapView"
+        app:layout_constraintEnd_toEndOf="@id/item_mapView"
+        app:layout_constraintStart_toStartOf="@id/item_mapView"
+        app:layout_constraintTop_toTopOf="@id/item_mapView">
+
+        <ImageView
+            android:id="@+id/icon_no_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_no_map"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/text_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/error_loading_map"
+            android:textSize="@dimen/_12sp"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+
     <TextView
+        android:id="@+id/find_us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
@@ -38,15 +75,35 @@
         app:layout_constraintStart_toEndOf="@id/icon"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.mapbox.mapboxsdk.maps.MapView
-        android:id="@+id/item_mapView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="64dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/icon"
-        mapbox:mapbox_cameraTargetLat="16.080234"
-        mapbox:mapbox_cameraTargetLng="108.2199936"
-        mapbox:mapbox_cameraZoom="15" />
+    <TextView
+        android:id="@+id/tv_name_homestay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="17dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="left"
+        android:maxLines="2"
+        android:text="Hotel Continal"
+        android:textColor="@color/color_black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/find_us"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:maxLines="2"
+        android:text="Ho Chi Minh"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_name_homestay"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_homestay" />
 
 </android.support.constraint.ConstraintLayout>

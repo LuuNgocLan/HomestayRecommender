@@ -14,7 +14,7 @@ public class ProfilePresenter implements IProfileContract.IProfilePresenter {
     }
 
     @Override
-    public void onCreate(IBaseView iBaseView) {
+    public void onCreate(IProfileContract.IProfileView iBaseView) {
         this.mISaveView = (IProfileContract.IProfileView) iBaseView;
     }
 

@@ -9,7 +9,7 @@ public interface ISettingContract {
 
     }
 
-    interface ISettingPresenter extends IBasePresenter {
+    interface ISettingPresenter extends IBasePresenter<ISettingView> {
 
     }
 }

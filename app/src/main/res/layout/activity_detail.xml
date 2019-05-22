@@ -95,6 +95,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:includeFontPadding="false"
             android:text="Hotel Celadon"
+            android:maxLines="2"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold"
