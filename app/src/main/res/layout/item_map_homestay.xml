@@ -2,7 +2,8 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="360dp"
+    android:layout_height="wrap_content"
+    android:background="@color/color_main_detail"
     android:paddingBottom="@dimen/_30dp">
 
     <View
@@ -28,8 +29,8 @@
     <ImageView
         android:id="@+id/item_mapView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="64dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="14dp"
         android:background="#73D8D8D8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/icon" />
@@ -48,18 +49,18 @@
             android:id="@+id/icon_no_map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_no_map"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_no_map" />
 
         <TextView
             android:id="@+id/text_error"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/montserrat_medium"
             android:text="@string/error_loading_map"
-            android:textSize="@dimen/_12sp"
-            android:layout_marginTop="15dp"/>
+            android:textSize="@dimen/_12sp" />
     </LinearLayout>
 
 
@@ -93,17 +94,31 @@
 
     <TextView
         android:id="@+id/tv_address"
-        android:layout_width="0dp"
+        android:layout_width="323dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="17dp"
         android:fontFamily="@font/montserrat_medium"
         android:maxLines="2"
         android:text="Ho Chi Minh"
         android:textColor="@color/color_black"
         android:textSize="@dimen/_12sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/tv_name_homestay"
         app:layout_constraintTop_toBottomOf="@id/tv_name_homestay" />
+
+    <TextView
+        android:id="@+id/about_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="27dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/about_area"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_mapView" />
 
 </android.support.constraint.ConstraintLayout>

@@ -33,4 +33,8 @@
     <color name="color_text_login">#5DC1B2</color>
     <color name="color_bg">#F1F1F3</color>
     <color name="color_black">#000000</color>
+    <color name="color_main_detail">#FAFAFA</color>
+    <color name="color_icon_nomarl">#979797</color>
+    <color name="indicator_unselected">#979797</color>
+
 </resources>

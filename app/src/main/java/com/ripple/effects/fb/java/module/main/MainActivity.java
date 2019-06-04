@@ -1,14 +1,17 @@
 package com.ripple.effects.fb.java.module.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.widget.Toast;
 
 import com.base.java.IBaseListener;
 import com.base.java.mvp.BaseActivity;
 import com.base.java.mvp.IBasePresenter;
 import com.ripple.effects.fb.java.R;
+import com.ripple.effects.fb.java.models.data.DataCenter;
 import com.ripple.effects.fb.java.module.base.ParentContainerFragment;
 import com.ripple.effects.fb.java.module.favorite.FavoriteFragment;
 import com.ripple.effects.fb.java.module.discover.DiscoverFragment;
@@ -25,6 +28,7 @@ import static com.ripple.effects.fb.java.module.base.ParentContainerFragment.Par
 import static com.ripple.effects.fb.java.module.base.ParentContainerFragment.ParentContainerRoot.PARENT_TAB_1;
 import static com.ripple.effects.fb.java.module.base.ParentContainerFragment.ParentContainerRoot.PARENT_TAB_2;
 import static com.ripple.effects.fb.java.module.base.ParentContainerFragment.ParentContainerRoot.PARENT_TAB_3;
+import static com.ripple.effects.fb.java.module.profile.ProfileFragment.LOGIN_CODE;
 
 public class MainActivity extends BaseActivity implements IMainContract.IMainView, IBaseListener {
 
@@ -35,13 +39,17 @@ public class MainActivity extends BaseActivity implements IMainContract.IMainVie
 
     private IMainContract.IMainPresenter mIMainPresenter;
     private ViewPagerAdapter mViewPagerAdapter;
+    private DataCenter mDataCenter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
+        mDataCenter = DataCenter.getInstance();
+        mDataCenter.getMyFavorite();
         initViewPager();
         setEvent();
+
     }
 
     @Override
@@ -97,6 +105,7 @@ public class MainActivity extends BaseActivity implements IMainContract.IMainVie
         mMainViewPager.setSwipeLocked(true);
         mMainViewPager.setOffscreenPageLimit(mViewPagerAdapter.getCount());
         mCustomTab.setupWithViewPager(mMainViewPager);
+
     }
 
     private void setEvent() {
@@ -162,4 +171,14 @@ public class MainActivity extends BaseActivity implements IMainContract.IMainVie
         }
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK) {
+            if (requestCode == LOGIN_CODE) {
+                Toast.makeText(getApplicationContext(), "Finish Login", Toast.LENGTH_SHORT).show();
+            }
+        }
+
+    }
 }

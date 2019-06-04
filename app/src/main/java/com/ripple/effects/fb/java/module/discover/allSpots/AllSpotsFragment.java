@@ -83,7 +83,7 @@ public class AllSpotsFragment extends BaseFragment implements IBaseItemListener,
     }
 
     @Override
-    public void onClickFavoriteHomestay(int isHomestay, boolean isFavorite) {
+    public void onClickFavoriteHomestay(String idHomestay, boolean isFavorite) {
 
     }
 

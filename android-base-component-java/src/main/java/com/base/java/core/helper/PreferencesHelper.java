@@ -6,8 +6,13 @@ import android.content.SharedPreferences.Editor;
 
 public final class PreferencesHelper {
 
+    public static final String TOKEN = "TOKEN";
     private static final String PREF_NAME = "APP_PREF";
     private static final int MODE = Context.MODE_PRIVATE;
+    public static final String CURRENCY = "CURRENCY";
+    public static final String LANGUAGE = "LANGUAGE";
+    public static final String MEASURE = "MEASURE";
+    public static final String ISlOGGED = "IS_LOGGED";
 
     public static void writeBoolean(Context context, String key, boolean value) {
         getEditor(context).putBoolean(key, value).commit();

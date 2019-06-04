@@ -2,19 +2,24 @@ package com.ripple.effects.fb.java.module.detail;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetBehavior;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.base.java.core.helper.ImageHelper;
+import com.base.java.core.utils.ScreenUtils;
 import com.base.java.mvp.BaseActivity;
 import com.base.java.mvp.IBasePresenter;
 import com.ripple.effects.fb.java.R;
 import com.ripple.effects.fb.java.models.detailhomestay.Homestay;
 import com.ripple.effects.fb.java.module.detail.adapter.DetailHomestayAdapter;
 import com.ripple.effects.fb.java.module.detail.adapter.HomestayDetailSection;
+import com.ripple.effects.fb.java.utils.ViewUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,8 +29,10 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 import static com.ripple.effects.fb.java.utils.AppUtils.ID_HOMESTAY;
+import static com.ripple.effects.fb.java.utils.AppUtils.dipToPx;
 
-public class DetailActivity extends BaseActivity implements IDetailContract.IDetailView {
+public class DetailActivity extends BaseActivity implements IDetailContract.IDetailView,
+        NestedScrollView.OnScrollChangeListener, DetailHomestayAdapter.OnClickReviewTag {
 
     @BindView(R.id.imv_center)
     ImageView mImvCenter;
@@ -35,6 +42,10 @@ public class DetailActivity extends BaseActivity implements IDetailContract.IDet
     ImageView mImvClose;
     @BindView(R.id.imv_option)
     ImageView mImvOption;
+    @BindView(R.id.nested_scroll_view)
+    NestedScrollView mNestedScrollView;
+    @BindView(R.id.name_homestay)
+    TextView mTvNameHomestay;
 
     private DetailPresenter mDetailPresenter;
     private DetailHomestayAdapter mAdapter;
@@ -66,28 +77,16 @@ public class DetailActivity extends BaseActivity implements IDetailContract.IDet
     }
 
     private void setEvent() {
-
-    }
-
-    private void setColorIconToolbar(int state) {
-        switch (state) {
-            case BottomSheetBehavior.STATE_EXPANDED:
-                mImvClose.setImageResource(R.drawable.ic_close_black);
-                mImvOption.setImageResource(R.drawable.ic_option_black);
-                break;
-            default:
-                mImvClose.setImageResource(R.drawable.ic_close);
-                mImvOption.setImageResource(R.drawable.ic_option);
-        }
-
+        mNestedScrollView.setOnScrollChangeListener(this);
     }
 
     private void initRecyclerView() {
         initSections();
-        mAdapter = new DetailHomestayAdapter( getApplicationContext(), mHomestay, mSections);
+        mAdapter = new DetailHomestayAdapter(this, getApplicationContext(), mHomestay, mSections);
         mRvDetailHomeStay.setLayoutManager(new LinearLayoutManager(getApplicationContext(),
                 LinearLayoutManager.VERTICAL, false));
         mRvDetailHomeStay.setAdapter(mAdapter);
+        mAdapter.setOnClickReviewTag(this);
     }
 
     private void initSections() {
@@ -132,9 +131,9 @@ public class DetailActivity extends BaseActivity implements IDetailContract.IDet
             mHomestay = homestay;
             initRecyclerView();
 
-//            if (!TextUtils.isEmpty(homestay.getName())) {
-//                mTvNameHomestay.setText(homestay.getName());
-//            }
+            if (!TextUtils.isEmpty(homestay.getName())) {
+                mTvNameHomestay.setText(homestay.getName());
+            }
 //            if (!TextUtils.isEmpty(homestay.getNumReviews())) {
 //                mTvReviewNum.setText(homestay.getNumReviews());
 //            }
@@ -165,5 +164,32 @@ public class DetailActivity extends BaseActivity implements IDetailContract.IDet
     @Override
     public void onShowloading() {
 
+    }
+
+    @Override
+    public void onScrollChange(NestedScrollView nestedScrollView, int scrollX, int scrollY, int scrollOldX, int scrollOldY) {
+        int scrollViewHeight = dipToPx(getApplication(), 400);
+        int headerHeight = dipToPx(getApplication(), 61 + 24);
+
+        if (scrollViewHeight - ScreenUtils.getScreenHeight(getApplicationContext()) > headerHeight) {
+            mTvNameHomestay.setAlpha(scrollY == 0 ? 0 : 1);
+        } else if (scrollY < scrollViewHeight - headerHeight) {
+            mTvNameHomestay.setAlpha(0);
+        } else {
+            mTvNameHomestay.setAlpha(1);
+        }
+
+        ViewUtils.setTintColor(mImvClose, mTvNameHomestay.getAlpha() == 0 ? 0xFFFFFFFF : 0xFF000000);
+        ViewUtils.setTintColor(mImvOption, mTvNameHomestay.getAlpha() == 0 ? 0xFFFFFFFF : 0xFF000000);
+
+    }
+
+    @Override
+    public void onClickReviewTag() {
+        mRvDetailHomeStay.smoothScrollToPosition(3);
+    }
+
+    public void scrollToTop(){
+        mRvDetailHomeStay.smoothScrollToPosition(0);
     }
 }

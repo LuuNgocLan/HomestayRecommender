@@ -61,7 +61,7 @@ public class AllDestinationFragment extends BaseFragment implements IBaseItemLis
     }
 
     @Override
-    public void onClickFavoriteHomestay(int isHomestay, boolean isFavorite) {
+    public void onClickFavoriteHomestay(String isHomestay, boolean isFavorite) {
 
     }
 }

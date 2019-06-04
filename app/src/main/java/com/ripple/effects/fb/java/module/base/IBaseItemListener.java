@@ -4,5 +4,5 @@ public interface IBaseItemListener {
 
     void openDetailHomestay(String idHomestay);
 
-    void onClickFavoriteHomestay(int isHomestay, boolean isFavorite);
+    void onClickFavoriteHomestay(String idHomestay, boolean isFavorite);
 }

@@ -5,11 +5,14 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.base.java.IBaseListener;
 import com.base.java.core.utils.DimenUtils;
@@ -25,6 +28,7 @@ import com.ripple.effects.fb.java.module.discover.adapter.AllSpotsAdapter;
 import com.ripple.effects.fb.java.module.discover.adapter.DestinationsAdapter;
 import com.ripple.effects.fb.java.module.discover.adapter.RecommendAdapter;
 import com.ripple.effects.fb.java.module.discover.allSpots.AllSpotsFragment;
+import com.ripple.effects.fb.java.module.favorite.IFavoriteProtocol;
 import com.ripple.effects.fb.java.module.filter.FilterFragment;
 import com.ripple.effects.fb.java.module.search.SearchFragment;
 import com.yarolegovich.discretescrollview.DSVOrientation;
@@ -42,7 +46,7 @@ import static com.ripple.effects.fb.java.utils.AppUtils.ID_HOMESTAY;
 
 public class DiscoverFragment extends BaseFragment implements IDiscoverContract.IDiscoverView, IBaseItemListener {
 
-    private IDiscoverContract.IDiscoverPresenter mIHomePresenter;
+    private IDiscoverContract.IDiscoverPresenter mIDiscoverPresenter;
     private IBaseListener mIBaseListener;
 
     @BindView(R.id.rv_recommend)
@@ -51,6 +55,12 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
     RecyclerView mRvSpots;
     @BindView(R.id.rv_destinations)
     RecyclerView mRvDestinations;
+    @BindView(R.id.tv_spots_num)
+    TextView mTvSpotsNum;
+    @BindView(R.id.container)
+    ConstraintLayout mContainer;
+    @BindView(R.id.nested_scroll_view)
+    NestedScrollView mNestedScrollView;
 
     private RecommendAdapter mRecommendAdapter;
     private AllSpotsAdapter mAllSpotsAdapter;
@@ -75,17 +85,15 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = super.onCreateView(inflater, container, savedInstanceState);
         ButterKnife.bind(this, view);
-        mIHomePresenter = new DiscoverPresenter(getContext());
-        mIHomePresenter.onCreate(this);
-        mIHomePresenter.loadDataStatic();
+        mIDiscoverPresenter = new DiscoverPresenter(getContext());
+        mIDiscoverPresenter.onCreate(this);
+        mIDiscoverPresenter.loadDataStatic();
+        mIDiscoverPresenter.loadDataRecommendation();
         initRecyclerView();
         return view;
     }
 
     private void initRecyclerView() {
-        mRecommendAdapter = new RecommendAdapter(getContext());
-        mRecommendAdapter.setIBaseItemListener(this);
-        mRvRecommend.setAdapter(mRecommendAdapter);
         mRvRecommend.setOrientation(DSVOrientation.HORIZONTAL);
 
         ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) mRvRecommend.getLayoutParams();
@@ -128,14 +136,14 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
     @Override
     public void onStart() {
         super.onStart();
-        if (mIHomePresenter != null) {
-            mIHomePresenter.onStart();
+        if (mIDiscoverPresenter != null) {
+            mIDiscoverPresenter.onStart();
         }
     }
 
     @Override
     protected IBasePresenter initPresenter() {
-        return mIHomePresenter;
+        return mIDiscoverPresenter;
     }
 
     @Override
@@ -148,12 +156,12 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
     }
 
     public void requestLoadHomeData() {
-        if (mIHomePresenter != null) {
+        if (mIDiscoverPresenter != null) {
         }
     }
 
     public void smoothScrollToTop() {
-        // TODO: 4/3/19 smoothScrollToTop
+        mNestedScrollView.smoothScrollTo(0, 0);
     }
 
     @Override
@@ -173,6 +181,7 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
     @Override
     public void onSuccesSpots(List<Homestay> homestayList) {
         if (homestayList != null && homestayList.size() > 0) {
+            mTvSpotsNum.setText(homestayList.size() + " Spots");
             mAllSpotsAdapter = new AllSpotsAdapter(getContext(), 80, homestayList);
             mAllSpotsAdapter.setIBaseItemListener(this);
             mRvSpots.setLayoutManager(new LinearLayoutManager(getContext(),
@@ -183,7 +192,12 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
 
     @Override
     public void onSuccessRecommend(List<Homestay> homestayList) {
-
+        Toast.makeText(getContext(), homestayList.size() + "", Toast.LENGTH_SHORT).show();
+        if (homestayList != null && homestayList.size() > 0) {
+            mRecommendAdapter = new RecommendAdapter(getContext(), homestayList);
+            mRecommendAdapter.setIBaseItemListener(this);
+            mRvRecommend.setAdapter(mRecommendAdapter);
+        }
     }
 
     @Override
@@ -199,7 +213,9 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
     }
 
     @Override
-    public void onClickFavoriteHomestay(int isHomestay, boolean isFavorite) {
+    public void onClickFavoriteHomestay(String idHomestay, boolean isFavorite) {
+        if (mIDiscoverPresenter != null)
+            mIDiscoverPresenter.updateFavorite(idHomestay);
     }
 
     @OnClick(R.id.imv_setting)
@@ -228,5 +244,16 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
         if (mFragmentListener != null) {
             mFragmentListener.addChildFragment(new AllDestinationFragment(), true, true);
         }
+    }
+
+    @Override
+    public void onUpdateFavoriteSuccess() {
+        Toast.makeText(getContext(), "Favorite Success!", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onUpdateFavoriteFailed() {
+        Toast.makeText(getContext(), "Favorite Failed!", Toast.LENGTH_SHORT).show();
+
     }
 }

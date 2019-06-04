@@ -45,4 +45,9 @@
     <string name="text_type_something">Type Something...</string>
     <string name="slogan_login">Find the best pace to spend your upcoming weekend.</string>
     <string name="error_loading_map">Error loading map!</string>
+    <string name="sample_review">Fusce pulvinar poseure nisl. Non potitor Veridian is an aesthetic Hotels browsing app specially designed to fit right into the new iOS 12</string>
+    <string name="date">May 22nd</string>
+    <string name="about_area">This is a local house in Giang Ta Chai village, Ta Van commune, 10km away from Sapa center, was built by people in the village, having spiritual values of H\'mong community. Far away from tourism area, nature is around with mountain, waterfall, river, bamboo forest, rice fields with amazing view. Quiet, peaceful and joyful is all about our house</string>
+    <string name="price_range">PRICE RANGE</string>
+    <string name="star">Most review</string>
 </resources>

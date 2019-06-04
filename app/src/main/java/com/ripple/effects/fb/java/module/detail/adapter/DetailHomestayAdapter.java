@@ -1,7 +1,18 @@
 package com.ripple.effects.fb.java.module.detail.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,6 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.base.java.core.utils.ViewUtils;
@@ -19,13 +31,17 @@ import com.ripple.effects.fb.java.models.detailhomestay.Review;
 import com.ripple.effects.fb.java.widget.AvatarListCustomView;
 import com.ripple.effects.fb.java.widget.ExpandableTextView;
 import com.ripple.effects.fb.java.widget.SectioningAdapter;
+import com.ripple.effects.fb.java.widget.indicator.CircleIndicator;
 
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import io.reactivex.internal.fuseable.HasUpstreamObservableSource;
+import retrofit2.http.PUT;
 
 import static com.base.java.core.utils.DimenUtils.dpToPx;
 
@@ -37,11 +53,14 @@ public class DetailHomestayAdapter extends SectioningAdapter {
     private final int TYPE_REVIEW = 3;
 
     private Context mContext;
+    private Activity mActivity;
     private Homestay mHomestay;
     private List<HomestayDetailSection> mHomestayDetailSections;
+    private OnClickReviewTag mOnClickReviewTag;
 
-    public DetailHomestayAdapter(Context context, Homestay homestay,
+    public DetailHomestayAdapter(Activity activity, Context context, Homestay homestay,
                                  List<HomestayDetailSection> detailSectionList) {
+        mActivity = activity;
         mContext = context;
         mHomestay = homestay;
         mHomestayDetailSections = detailSectionList;
@@ -118,6 +137,7 @@ public class DetailHomestayAdapter extends SectioningAdapter {
                 ((MapHomestayViewHolder) viewHolder).bindView(mHomestay);
                 break;
             case TYPE_REVIEW:
+                ((ReviewHomestayViewHolder) viewHolder).onBindview(mHomestay);
                 break;
             default:
         }
@@ -125,6 +145,10 @@ public class DetailHomestayAdapter extends SectioningAdapter {
 
     public void setHideViewTop(boolean isHide) {
 
+    }
+
+    public void setOnClickReviewTag(OnClickReviewTag onClickReviewTag) {
+        mOnClickReviewTag = onClickReviewTag;
     }
 
     class InforHomestayViewHolder extends ItemViewHolder implements View.OnClickListener {
@@ -135,6 +159,7 @@ public class DetailHomestayAdapter extends SectioningAdapter {
         TextView mTvScore;
         TextView mTvNumReview;
         AvatarListCustomView mAvatarListCustomView;
+        ConstraintLayout mContainerReview;
 
         public InforHomestayViewHolder(View itemView) {
             super(itemView);
@@ -144,7 +169,14 @@ public class DetailHomestayAdapter extends SectioningAdapter {
             mTvScore = itemView.findViewById(R.id.tv_star_homestay);
             mTvNumReview = itemView.findViewById(R.id.tv_review_num);
             mAvatarListCustomView = itemView.findViewById(R.id.list_avatar);
+            mContainerReview = itemView.findViewById(R.id.container_review);
             mTvDescription.setOnClickListener(this);
+            mContainerReview.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mOnClickReviewTag.onClickReviewTag();
+                }
+            });
         }
 
         public void resetMarginTopView(boolean isHide) {
@@ -174,19 +206,24 @@ public class DetailHomestayAdapter extends SectioningAdapter {
                 if (!TextUtils.isEmpty(homestay.getDescription())) {
                     mTvDescription.setText(homestay.getDescription());
                 }
-                if (!TextUtils.isEmpty(String.valueOf(homestay.getNumReviews()))) {
-                    mTvNumReview.setText(homestay.getNumReviews() + "");
-                }
-                if (homestay.getReview() != null && homestay.getReview().size() > 0) {
-                    List<String> imageUrl = new ArrayList<>();
-                    for (Review review : homestay.getReview()
-                    ) {
-                        imageUrl.add(review.getAvatar());
+
+                if (homestay.getNumReviews() != null) {
+                    int numReview = homestay.getNumReviews();
+                    if (numReview > 0) {
+                        mTvNumReview.setText(homestay.getNumReviews() + "");
+                        if (homestay.getReview() != null && homestay.getReview().size() > 0) {
+                            List<String> imageUrl = new ArrayList<>();
+                            for (Review review : homestay.getReview()
+                            ) {
+                                imageUrl.add(review.getAvatar());
+                            }
+                            mAvatarListCustomView.setDataImage(imageUrl);
+                        }
+                    } else {
+                        mContainerReview.setVisibility(View.GONE);
                     }
-                    mAvatarListCustomView.setDataImage(imageUrl);
                 }
             }
-
         }
 
 
@@ -197,11 +234,95 @@ public class DetailHomestayAdapter extends SectioningAdapter {
         }
     }
 
+    public interface OnClickReviewTag {
+        void onClickReviewTag();
+    }
+
     class FeatureHomestayViewHolder extends ItemViewHolder {
+        ViewPager mViewPager;
+        CircleIndicator mIndicator;
+
+        FeatureAdapter mAdapter;
 
         public FeatureHomestayViewHolder(View itemView) {
             super(itemView);
+            mViewPager = itemView.findViewById(R.id.view_pager);
+            mIndicator = itemView.findViewById(R.id.indicator);
+            mAdapter = new FeatureAdapter(((AppCompatActivity) mActivity).getSupportFragmentManager());
+            mViewPager.setAdapter(mAdapter);
+            mIndicator.setViewPager(mViewPager, mAdapter.getCount());
+            mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+                @Override
+                public void onPageScrolled(int position, float positionOffset, int positionOffsetPixel) {
+
+                }
+
+                @Override
+                public void onPageSelected(int position) {
+                }
+
+                @Override
+                public void onPageScrollStateChanged(int i) {
+
+                }
+            });
+
+
         }
+
+    }
+
+    private class FeatureAdapter extends FragmentStatePagerAdapter {
+
+        FeatureAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return FeatureFragment.newInstance(position);
+        }
+
+        @Override
+        public int getCount() {
+            return 3;
+        }
+
+        @Override
+        public Parcelable saveState() {
+            Bundle bundle = (Bundle) super.saveState();
+            if (bundle != null) {
+                bundle.putParcelableArray("states", null);
+            }
+            return bundle;
+        }
+    }
+
+    public static class FeatureFragment extends Fragment {
+        private final int[] PAGE_LAYOUT = {R.layout.layout_feature_1, R.layout.layout_feature_2,
+                R.layout.layout_feature_3};
+
+        int currentPage;
+
+        @Nullable
+        @Override
+        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+            View view = inflater.inflate(PAGE_LAYOUT[currentPage], container, false);
+            return view;
+        }
+
+        public static FeatureFragment newInstance(int currentPage) {
+
+            FeatureFragment f = new FeatureFragment();
+            f.setCurrentPage(currentPage);
+            return f;
+        }
+
+
+        public void setCurrentPage(int currentPage) {
+            this.currentPage = currentPage;
+        }
+
     }
 
     class MapHomestayViewHolder extends ItemViewHolder {
@@ -209,6 +330,7 @@ public class DetailHomestayAdapter extends SectioningAdapter {
         TextView mTvNameHomestay;
         TextView mTvAdrress;
         LinearLayout mLlError;
+        TextView mTvAboutArea;
 
         public MapHomestayViewHolder(View itemView) {
             super(itemView);
@@ -216,6 +338,7 @@ public class DetailHomestayAdapter extends SectioningAdapter {
             mTvNameHomestay = itemView.findViewById(R.id.tv_name_homestay);
             mTvAdrress = itemView.findViewById(R.id.tv_address);
             mLlError = itemView.findViewById(R.id.view_error);
+            mTvAboutArea = itemView.findViewById(R.id.about_area);
         }
 
         public void setHideViewTop(boolean isHide) {
@@ -239,41 +362,30 @@ public class DetailHomestayAdapter extends SectioningAdapter {
                 } else {
                     mLlError.setVisibility(View.VISIBLE);
                 }
+                if (!TextUtils.isEmpty(homestay.getAboutArea())) {
+                    mTvAboutArea.setText(homestay.getAboutArea());
+                }
             }
 
-        }
-
-        private void initMapViewWithPosition(Bundle savedInstanceState, LatLng latLng) {
-//            Mapbox.getInstance(mContext, BuildConfig.MAPBOX_TOKEN_ACCESS);
-//            mMapView.onCreate(savedInstanceState);
-//            mMapView.getMapAsync(new OnMapReadyCallback() {
-//                @Override
-//                public void onMapReady(@NonNull MapboxMap mapboxMap) {
-//                    mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
-//                        @Override
-//                        public void onStyleLoaded(@NonNull Style style) {
-//
-//                            mapboxMap.addMarker(new MarkerOptions()
-//                                    .position(latLng)
-//                                    .icon(IconFactory.getInstance(mContext).fromResource(R.drawable.ic_land_marker))
-//                                    .title("FHome"));
-////                            // Add the marker to the map
-////                            mapboxMap.addMarker(new MarkerViewOptions()
-////                                    .position(new LatLng(-37.821648, 144.978594))
-////                                    .icon(icon));
-//
-//                        }
-//                    });
-//                }
-//            });
         }
 
     }
 
     class ReviewHomestayViewHolder extends ItemViewHolder {
+        private RecyclerView mRvReviewList;
+        private ReviewAdapter mAdapter;
 
         public ReviewHomestayViewHolder(View itemView) {
             super(itemView);
+            mRvReviewList = itemView.findViewById(R.id.rv_reviews);
+        }
+
+        public void onBindview(Homestay homestay) {
+            if (homestay != null && homestay.getReview() != null) {
+                mAdapter = new ReviewAdapter(mContext, homestay.getReview());
+                mRvReviewList.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
+                mRvReviewList.setAdapter(mAdapter);
+            }
         }
     }
 

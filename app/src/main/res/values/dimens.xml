@@ -34,6 +34,6 @@
     <dimen name="_110dp">110dp</dimen>
     <dimen name="_120dp">120dp</dimen>
     <dimen name="_140dp">140dp</dimen>
-    <dimen name="icon_toolbar_margin_top">61dp</dimen>
+    <dimen name="icon_toolbar_margin_top">56dp</dimen>
     <!-- End Plan tour -->
 </resources>

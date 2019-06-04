@@ -2,16 +2,22 @@ package com.ripple.effects.fb.java.module.discover;
 
 import android.content.Context;
 import android.os.Handler;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.base.java.mvp.IBaseView;
+import com.ripple.effects.fb.java.models.data.DataCenter;
 import com.ripple.effects.fb.java.models.homestay.Homestay;
 import com.ripple.effects.fb.java.models.homestay.HomestayResponse;
 import com.ripple.effects.fb.java.network.ApiService;
 import com.ripple.effects.fb.java.network.WSInterface;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.List;
 
+import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -21,6 +27,7 @@ public class DiscoverPresenter implements IDiscoverContract.IDiscoverPresenter {
     private Context mContext;
     private IDiscoverContract.IDiscoverView mIHomeView;
     private boolean isRefresh;
+    private DataCenter mDataCenter = DataCenter.getInstance();
     private WSInterface mApiService = ApiService.getClient().create(WSInterface.class);
 
     public DiscoverPresenter(Context context) {
@@ -47,15 +54,14 @@ public class DiscoverPresenter implements IDiscoverContract.IDiscoverPresenter {
     public void loadDataStatic() {
         WSInterface apiService = ApiService.getClient().create(WSInterface.class);
 
-        Call<HomestayResponse> call = apiService.getTopScoreOfHomestay();
+        Call<HomestayResponse> call = apiService.getAllSpots();
         call.enqueue(new Callback<HomestayResponse>() {
             @Override
             public void onResponse(retrofit2.Call<HomestayResponse> call, Response<HomestayResponse> response) {
                 if (response.code() == 200) {
                     if (response.body() != null) {
                         List<Homestay> homestays = response.body().getData().getHomestays();
-
-                        if(mIHomeView!=null){
+                        if (mIHomeView != null) {
                             mIHomeView.onSuccesSpots(homestays);
                         }
                     }
@@ -73,6 +79,56 @@ public class DiscoverPresenter implements IDiscoverContract.IDiscoverPresenter {
 
     @Override
     public void loadDataRecommendation() {
+        WSInterface apiService = ApiService.getClient().create(WSInterface.class);
 
+        Call<HomestayResponse> call = apiService.getTopScoreOfHomestay();
+        call.enqueue(new Callback<HomestayResponse>() {
+            @Override
+            public void onResponse(retrofit2.Call<HomestayResponse> call, Response<HomestayResponse> response) {
+                if (response.code() == 200) {
+                    if (response.body() != null) {
+                        Log.d("Recommend", "Success!");
+                        List<Homestay> homestays = response.body().getData().getHomestays();
+                        if (mIHomeView != null) {
+                            mIHomeView.onSuccessRecommend(homestays);
+                        }
+                    }
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<HomestayResponse> call, Throwable t) {
+                Log.d("Recommend", "Failed");
+            }
+        });
+
+    }
+
+    @Override
+    public void updateFavorite(String idHomestay) {
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("homestayId", idHomestay);
+            jsonObject.put("isFavorite", true);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody body = RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), jsonObject.toString());
+        mDataCenter.favorite(body, new DataCenter.OnFavoriteListener() {
+            @Override
+            public void onUpdateFavoriteSuccess() {
+                if (mIHomeView != null) {
+                    mIHomeView.onUpdateFavoriteSuccess();
+                }
+            }
+
+            @Override
+            public void onUpdateFavoriteFailed() {
+                if (mIHomeView != null) {
+                    mIHomeView.onUpdateFavoriteFailed();
+                }
+            }
+        });
     }
 }

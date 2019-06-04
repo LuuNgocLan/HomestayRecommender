@@ -2,8 +2,8 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="@color/color_bg"
     android:layout_height="match_parent"
+    android:background="@color/color_bg"
     android:clickable="true">
 
     <View
@@ -26,8 +26,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginStart="20dp"
-            android:text="@string/filter_by"
             android:fontFamily="@font/montserrat_bold"
+            android:text="@string/filter_by"
             android:textColor="@android:color/black"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -49,7 +49,7 @@
             <View
                 android:id="@+id/line1"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="1dp"
                 android:layout_marginLeft="22dp"
                 android:layout_marginRight="22dp"
                 android:background="#979797" />
@@ -69,28 +69,17 @@
                 android:layout_alignBottom="@+id/ic_distance"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/ic_distance"
+                android:fontFamily="@font/montserrat_medium"
                 android:includeFontPadding="false"
                 android:text="@string/distance_from_you"
-                android:fontFamily="@font/montserrat_medium"
                 android:textColor="#000"
                 android:textSize="12sp" />
 
-            <SeekBar
-                android:id="@+id/seek_bar_distance"
-                style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/ic_distance"
-                android:layout_marginLeft="@dimen/_50dp"
-                android:layout_marginTop="22dp"
-                android:layout_marginRight="@dimen/_50dp"
-                android:max="10"
-                android:progress="3" />
 
             <View
                 android:id="@+id/line2"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="1dp"
                 android:layout_below="@+id/seek_bar_distance"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="35dp"
@@ -112,22 +101,11 @@
                 android:layout_alignBottom="@+id/ic_highlight"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/ic_highlight"
+                android:fontFamily="@font/montserrat_medium"
                 android:includeFontPadding="false"
                 android:text="@string/highlights"
-                android:fontFamily="@font/montserrat_medium"
                 android:textColor="#000"
                 android:textSize="12sp" />
-
-            <SeekBar
-                style="@style/Widget.AppCompat.SeekBar.Discrete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/ic_distance"
-                android:layout_marginLeft="@dimen/_50dp"
-                android:layout_marginTop="22dp"
-                android:layout_marginRight="@dimen/_50dp"
-                android:max="10"
-                android:progress="3" />
 
             <View
                 android:id="@+id/line3"
@@ -138,6 +116,111 @@
                 android:layout_marginTop="35dp"
                 android:layout_marginRight="22dp"
                 android:background="#979797" />
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/seek_bar_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_distance"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="@dimen/_50dp"
+                android:layout_marginRight="22dp"
+                app:isb_indicator_color="@color/colorAccent"
+                app:isb_indicator_text_color="@color/paint_white"
+                app:isb_indicator_text_size="15sp"
+                app:isb_max="50"
+                app:isb_min="0"
+                app:isb_only_thumb_draggable="false"
+                app:isb_progress="25"
+                app:isb_seek_smoothly="true"
+                app:isb_show_indicator="rounded_rectangle"
+                app:isb_thumb_color="@color/colorAccent"
+                app:isb_track_background_color="#979797"
+                app:isb_track_background_size="6dp"
+                app:isb_track_progress_color="@color/colorAccent"
+                app:isb_track_progress_size="6dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ic_highlight"
+                android:layout_marginTop="30dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rv_highlight"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="22dp"
+                android:background="#979797" />
+
+            <ImageView
+                android:id="@+id/ic_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line4"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/ic_price" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ic_price"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ic_price"
+                android:fontFamily="@font/montserrat_medium"
+                android:includeFontPadding="false"
+                android:text="@string/price_range"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_price"
+                android:layout_marginLeft="@dimen/_50dp"
+                android:layout_marginTop="@dimen/_50dp"
+                android:layout_marginRight="22dp"
+                android:maxWidth="6dp" />
+
+            <!--<View-->
+                <!--android:id="@+id/line5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_below="@+id/seekBar"-->
+                <!--android:layout_marginLeft="50dp"-->
+                <!--android:layout_marginTop="35dp"-->
+                <!--android:layout_marginRight="22dp"-->
+                <!--android:background="#979797" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/ic_star"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/line5"-->
+                <!--android:layout_marginLeft="22dp"-->
+                <!--android:layout_marginTop="22dp"-->
+                <!--android:src="@drawable/ic_price" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@+id/ic_star"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_toRightOf="@+id/ic_star"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:includeFontPadding="false"-->
+                <!--android:text="@string/star"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="12sp" />-->
 
 
         </RelativeLayout>
@@ -152,8 +235,8 @@
         android:layout_marginEnd="22dp"
         android:layout_marginBottom="35dp"
         android:background="@drawable/bg_button_set_filter"
-        android:text="@string/text_set_filter"
         android:fontFamily="@font/montserrat_medium"
+        android:text="@string/text_set_filter"
         android:textAllCaps="false"
         android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"

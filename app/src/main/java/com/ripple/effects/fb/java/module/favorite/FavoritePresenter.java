@@ -1,15 +1,15 @@
 package com.ripple.effects.fb.java.module.favorite;
 
 import android.content.Context;
-import android.os.Handler;
 
-import com.base.java.mvp.IBaseView;
+import com.ripple.effects.fb.java.models.data.DataCenter;
 
-public class FavoritePresenter implements IFavoriteContract.IFavoritePresenter {
+public class FavoritePresenter implements IFavoriteContract.IFavoritePresenter, DataCenter.OnGetDataListener {
 
     private IFavoriteContract.IFavoriteView mIFavoriteView;
     private Context mContext;
     private boolean isRefresh;
+    private DataCenter mDataCenter;
 
     public FavoritePresenter(Context context) {
         this.mContext = context;
@@ -19,6 +19,8 @@ public class FavoritePresenter implements IFavoriteContract.IFavoritePresenter {
     public void onCreate(IFavoriteContract.IFavoriteView iBaseView) {
         this.mIFavoriteView = iBaseView;
         isRefresh = true;
+        mDataCenter = DataCenter.getInstance();
+        mDataCenter.setOnGetDataListener(this);
     }
 
     @Override
@@ -35,7 +37,19 @@ public class FavoritePresenter implements IFavoriteContract.IFavoritePresenter {
     public void fetchData() {
         if (!isRefresh) return;
         if (mIFavoriteView != null) {
+            mIFavoriteView.onSuccess(mDataCenter.getFavorites());
+        }
+    }
 
+    @Override
+    public void onSuccess() {
+
+    }
+
+    @Override
+    public void onError() {
+        if (mIFavoriteView != null) {
+            mIFavoriteView.onError();
         }
     }
 }

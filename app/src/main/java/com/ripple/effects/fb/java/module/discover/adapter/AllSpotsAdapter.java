@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.base.java.core.helper.ImageHelper;
 import com.ripple.effects.fb.java.R;
+import com.ripple.effects.fb.java.models.data.DataCenter;
 import com.ripple.effects.fb.java.models.homestay.Homestay;
 import com.ripple.effects.fb.java.module.base.IBaseItemListener;
 
@@ -30,6 +31,7 @@ public class AllSpotsAdapter extends RecyclerView.Adapter<AllSpotsAdapter.ViewHo
     public IBaseItemListener mIBaseItemListener;
     public int mMarginLeftFirstItem = 0;
     private List<Homestay> mHomestayList;
+    private DataCenter mDataCenter = DataCenter.getInstance();
 
     public AllSpotsAdapter(Context context, int marginLeftFirstItem, List<Homestay> homestays) {
         mContext = context;
@@ -68,7 +70,7 @@ public class AllSpotsAdapter extends RecyclerView.Adapter<AllSpotsAdapter.ViewHo
             viewHolder.mImageViewFavorite.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    mIBaseItemListener.onClickFavoriteHomestay(1, true);
+                    mIBaseItemListener.onClickFavoriteHomestay(mHomestayList.get(position).getId(), true);
                 }
             });
             viewHolder.mCardView.setOnClickListener(new View.OnClickListener() {
@@ -102,6 +104,8 @@ public class AllSpotsAdapter extends RecyclerView.Adapter<AllSpotsAdapter.ViewHo
         TextView mTvNameHomestay;
         TextView mTvPrice;
         TextView mTvScore;
+        ImageView mImvStar;
+        TextView mTvText;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -111,14 +115,26 @@ public class AllSpotsAdapter extends RecyclerView.Adapter<AllSpotsAdapter.ViewHo
             mTvPrice = itemView.findViewById(R.id.tv_price);
             mTvScore = itemView.findViewById(R.id.tv_star_num);
             mImvCenter = itemView.findViewById(R.id.iv_homestay);
+            mImvStar = itemView.findViewById(R.id.imv_star);
+            mTvText = itemView.findViewById(R.id.text);
         }
 
         public void bindView(Homestay homestay) {
+            if (mDataCenter.isFavoritedHomestay(homestay.getId())) {
+                mImageViewFavorite.setSelected(true);
+            } else {
+                mImageViewFavorite.setSelected(false);
+            }
+
             if (!TextUtils.isEmpty(homestay.getName())) {
                 mTvNameHomestay.setText(homestay.getName());
             }
-            if (!TextUtils.isEmpty(homestay.getReviewScore() + "")) {
+            if (homestay.getReviewScore() != null) {
                 mTvScore.setText(homestay.getReviewScore() + "");
+            } else {
+                mTvScore.setVisibility(View.GONE);
+                mTvText.setVisibility(View.GONE);
+                mImvStar.setVisibility(View.GONE);
             }
             if (!TextUtils.isEmpty(homestay.getPrice())) {
                 mTvPrice.setText(homestay.getPrice());

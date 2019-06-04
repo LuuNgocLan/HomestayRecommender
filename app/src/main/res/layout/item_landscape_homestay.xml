@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/tv_name_homestay"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="17dp"
             android:layout_marginTop="80dp"
@@ -35,10 +35,12 @@
             android:ellipsize="end"
             android:fontFamily="@font/montserrat_bold"
             android:maxLines="2"
+            android:gravity="left"
             android:text="Hotel Continental Hotel Continental Hotel Continental"
             android:textColor="@color/paint_white"
-            android:textSize="15sp"
+            android:textSize="17sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,7 +52,7 @@
             android:fontFamily="@font/montserrat_regular"
             android:text="125,000 vnd"
             android:textColor="@color/paint_white"
-            android:textSize="11sp"
+            android:textSize="13sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_name_homestay" />
 
@@ -63,7 +65,7 @@
             android:fontFamily="@font/montserrat_medium"
             android:text="4.3"
             android:textColor="@color/paint_white"
-            android:textSize="15sp"
+            android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_price" />
@@ -74,12 +76,13 @@
             android:layout_height="wrap_content"
             android:text="/5"
             android:textColor="@color/paint_white"
-            android:textSize="11sp"
+            android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="@id/tv_star_num"
             app:layout_constraintStart_toEndOf="@id/tv_star_num"
             app:layout_constraintTop_toTopOf="@id/tv_star_num" />
 
         <ImageView
+            android:id="@+id/iv_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"

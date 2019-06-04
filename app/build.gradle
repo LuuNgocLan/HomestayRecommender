@@ -84,4 +84,5 @@ dependencies {
 
 //    implementation 'com.github.kanytu:android-parallax-recyclerview:v1.7'
     implementation 'com.yarolegovich:discrete-scrollview:1.4.9'
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
 }

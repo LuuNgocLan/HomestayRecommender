@@ -21,6 +21,10 @@ public interface IDiscoverContract {
 
         void onSuccessDestinations();
 
+        void onUpdateFavoriteSuccess();
+
+        void onUpdateFavoriteFailed();
+
     }
 
     interface IDiscoverPresenter extends IBasePresenter<IDiscoverView> {
@@ -30,5 +34,7 @@ public interface IDiscoverContract {
         void loadDataStatic();
 
         void loadDataRecommendation();
+
+        void updateFavorite(String idHomestay);
     }
 }

@@ -6,6 +6,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class Homestay {
+
     @SerializedName("about")
     @Expose
     private List<String> about = null;
@@ -60,6 +61,9 @@ public class Homestay {
     @SerializedName("meals")
     @Expose
     private String meals;
+    @SerializedName("about_area")
+    @Expose
+    private String aboutArea;
     @SerializedName("__v")
     @Expose
     private Integer v;
@@ -206,6 +210,14 @@ public class Homestay {
 
     public void setMeals(String meals) {
         this.meals = meals;
+    }
+
+    public String getAboutArea() {
+        return aboutArea;
+    }
+
+    public void setAboutArea(String aboutArea) {
+        this.aboutArea = aboutArea;
     }
 
     public Integer getV() {
