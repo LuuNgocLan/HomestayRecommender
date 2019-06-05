@@ -1,10 +1,13 @@
 package com.ripple.effects.fb.java.models.data;
 
 import android.util.Log;
+import android.widget.Toast;
 
 import com.ripple.effects.fb.java.models.favorite.Favorite;
 import com.ripple.effects.fb.java.models.favorite.FavoriteResponse;
 import com.ripple.effects.fb.java.models.favorite.ListFavoriteResponse;
+import com.ripple.effects.fb.java.models.homestay.Homestay;
+import com.ripple.effects.fb.java.models.homestay.HomestayResponse;
 import com.ripple.effects.fb.java.models.profile.Profile;
 import com.ripple.effects.fb.java.models.profile.ProfileResponse;
 import com.ripple.effects.fb.java.network.ApiService;
@@ -41,6 +44,7 @@ public class DataCenter {
      * Attributes
      */
     private List<Favorite> mFavorites;
+    private List<Homestay> mHomestayList;
     private Profile mProfile;
 
     public List<Favorite> getFavorites() {
@@ -57,6 +61,14 @@ public class DataCenter {
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public List<Homestay> getHomestayList() {
+        return mHomestayList;
+    }
+
+    public void setHomestayList(List<Homestay> homestayList) {
+        mHomestayList = homestayList;
     }
 
     public Profile getProfile() {
@@ -151,6 +163,31 @@ public class DataCenter {
         });
     }
 
+    public void getAllSpots(OnGetDataListener onGetDataListener) {
+
+        Call<HomestayResponse> call = apiService.getAllSpots();
+        call.enqueue(new Callback<HomestayResponse>() {
+            @Override
+            public void onResponse(Call<HomestayResponse> call, Response<HomestayResponse> response) {
+                if (response.code() == 200) {
+                    if (response.body() != null) {
+                        List<Homestay> homestays = response.body().getData().getHomestays();
+                        if (onGetDataListener != null && homestays != null && homestays.size() > 0) {
+                            mHomestayList = homestays;
+                            onGetDataListener.onSuccess();
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<HomestayResponse> call, Throwable t) {
+                if (onGetDataListener != null) {
+                    onGetDataListener.onError();
+                }
+            }
+        });
+    }
 
     public interface OnGetDataListener {
         void onSuccess();

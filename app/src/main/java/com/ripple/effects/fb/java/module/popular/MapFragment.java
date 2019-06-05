@@ -1,9 +1,11 @@
 package com.ripple.effects.fb.java.module.popular;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +19,7 @@ import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.annotations.IconFactory;
+import com.mapbox.mapboxsdk.annotations.Marker;
 import com.mapbox.mapboxsdk.annotations.MarkerOptions;
 import com.mapbox.mapboxsdk.annotations.PolygonOptions;
 import com.mapbox.mapboxsdk.geometry.LatLng;
@@ -33,16 +36,22 @@ import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 import com.mapbox.mapboxsdk.maps.Style;
 import com.ripple.effects.fb.java.BuildConfig;
 import com.ripple.effects.fb.java.R;
+import com.ripple.effects.fb.java.models.data.DataCenter;
+import com.ripple.effects.fb.java.models.homestay.Homestay;
+import com.ripple.effects.fb.java.module.detail.DetailActivity;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static com.ripple.effects.fb.java.utils.AppUtils.ID_HOMESTAY;
+
 public class MapFragment
         extends BaseFragment
-        implements IMapContract.IMapView, OnMapReadyCallback, OnLocationClickListener, PermissionsListener, OnCameraTrackingChangedListener {
+        implements IMapContract.IMapView, OnMapReadyCallback, OnLocationClickListener, PermissionsListener, OnCameraTrackingChangedListener, MapboxMap.OnMarkerClickListener {
 
     IMapContract.IMapPresenter mIPopularPresenter;
 
@@ -55,9 +64,10 @@ public class MapFragment
     private MapboxMap mMapboxMap;
     private LocationComponent mLocationComponent;
     private boolean isInTrackingMode;
-
-    private List<LatLng> mLatLngs = new ArrayList<>();
-
+    private List<Homestay> mHomestayList;
+    private DataCenter mDataCenter = DataCenter.getInstance();
+    private List<MarkerOptions> mMarkerOptions = new ArrayList<>();
+    HashMap<String, MarkerOptions> mOptionsHashMap = new HashMap<>();
 
     @Override
     protected IBasePresenter initPresenter() {
@@ -91,8 +101,26 @@ public class MapFragment
         ButterKnife.bind(this, view);
         mMapView.onCreate(savedInstanceState);
         mMapView.getMapAsync(this);
-
+        checkData();
         return view;
+    }
+
+    private void checkData() {
+        if (mDataCenter.getHomestayList() != null && mDataCenter.getHomestayList().size() > 0) {
+            mHomestayList = mDataCenter.getHomestayList();
+        } else {
+            mDataCenter.getAllSpots(new DataCenter.OnGetDataListener() {
+                @Override
+                public void onSuccess() {
+                    mHomestayList = mDataCenter.getHomestayList();
+                }
+
+                @Override
+                public void onError() {
+                    mHomestayList = null;
+                }
+            });
+        }
     }
 
     @Override
@@ -167,25 +195,29 @@ public class MapFragment
     @Override
     public void onMapReady(@NonNull MapboxMap mapboxMap) {
         this.mMapboxMap = mapboxMap;
+        mMapboxMap.setOnMarkerClickListener(this);
         mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
             @Override
             public void onStyleLoaded(@NonNull Style style) {
-//                enableLocationComponent(style);
+                enableLocationComponent(style);
+                if (mHomestayList != null) {
+                    for (Homestay homestay :
+                            mHomestayList) {
+                        if (homestay.getLat() != null && homestay.getLng() != null) {
+                            MarkerOptions markerOptions = new MarkerOptions()
+                                    .position(new LatLng(homestay.getLat(), homestay.getLng()))
+                                    .icon(IconFactory.getInstance(getContext()).fromResource(R.drawable.ic_land_marker))
+                                    .title(homestay.getName())
+                                    .snippet(homestay.getPrice());
+                            mOptionsHashMap.put(homestay.getId(), markerOptions);
+                            mMarkerOptions.add(markerOptions);
+                            mapboxMap.addMarker(markerOptions);
 
-                mapboxMap.addMarker(new MarkerOptions()
-                        .position(new LatLng(16.080234, 108.2199936))
-                        .icon(IconFactory.getInstance(getContext()).fromResource(R.drawable.ic_land_marker))
-                        .title("FHome"));
-                mapboxMap.addMarker(new MarkerOptions()
-                        .position(new LatLng(16.07935, 108.2160235))
-                        .title("Dong Da Market"))
-                        .setSnippet("H St NW with 15th St NW");
-                mapboxMap.addMarker(new MarkerOptions()
-                        .position(new LatLng(16.0798505, 108.2184633))
-                        .title("Pho Garden"));
-                mapboxMap.addMarker(new MarkerOptions()
-                        .position(new LatLng(16.0797584,108.2186051))
-                        .title("H.I.S. ダナン支店"));
+                        }
+
+                    }
+                }
+
             }
         });
     }
@@ -199,7 +231,8 @@ public class MapFragment
                     .elevation(5)
                     .accuracyAlpha(.6f)
                     .accuracyColor(Color.RED)
-                    .foregroundDrawable(R.drawable.ic_map_selected)
+                    .backgroundTintColor(R.color.main_background_color)
+                    .foregroundDrawable(R.drawable.ic_my_position)
                     .build();
 
             // Get an instance of the component
@@ -296,4 +329,34 @@ public class MapFragment
         }
     }
 
+    @Override
+    public boolean onMarkerClick(@NonNull Marker marker) {
+        Log.d("POSITION", mOptionsHashMap.size() + "");
+        String id = "";
+        for (String keyId : mOptionsHashMap.keySet()) {
+            Homestay homestay = checkKeyInList(keyId);
+            if (homestay.getLng() == marker.getPosition().getLongitude()
+                    && homestay.getLat() == marker.getPosition().getLatitude()) {
+                id = keyId;
+                break;
+            }
+        }
+        Intent intent = new Intent(getContext(), DetailActivity.class);
+        intent.putExtra(ID_HOMESTAY, id);
+        startActivity(intent);
+
+        return false;
+    }
+
+    public Homestay checkKeyInList(String keyId) {
+        Homestay homestay_ = new Homestay();
+        for (Homestay homestay :
+                mHomestayList) {
+            if (homestay.getId().equals(keyId)) {
+                homestay_ = homestay;
+                break;
+            }
+        }
+        return homestay_;
+    }
 }

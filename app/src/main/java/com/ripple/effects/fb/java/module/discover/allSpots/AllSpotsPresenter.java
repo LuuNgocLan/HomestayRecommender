@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import com.base.java.mvp.IBaseView;
 import com.google.gson.Gson;
+import com.ripple.effects.fb.java.models.data.DataCenter;
 import com.ripple.effects.fb.java.models.homestay.Data;
 import com.ripple.effects.fb.java.models.homestay.Homestay;
 import com.ripple.effects.fb.java.models.homestay.HomestayResponse;
@@ -31,6 +32,7 @@ import static com.ripple.effects.fb.java.FakeData.loadJSONFromAsset;
 public class AllSpotsPresenter implements IAllSpotsContract.Presenter {
     private Context mContext;
     private IAllSpotsContract.View mView;
+    private DataCenter mDataCenter = DataCenter.getInstance();
 
     public AllSpotsPresenter(Context context) {
         mContext = context;
@@ -43,28 +45,40 @@ public class AllSpotsPresenter implements IAllSpotsContract.Presenter {
 
     @Override
     public void fetchData() {
-        WSInterface apiService = ApiService.getClient().create(WSInterface.class);
 
-        Call<HomestayResponse> call = apiService.getAllSpots();
-        call.enqueue(new Callback<HomestayResponse>() {
+        mDataCenter.getAllSpots(new DataCenter.OnGetDataListener() {
             @Override
-            public void onResponse(Call<HomestayResponse> call, Response<HomestayResponse> response) {
-                if (response.code() == 200) {
-                    if (response.body() != null) {
-                        List<Homestay> homestays = response.body().getData().getHomestays();
-                        if (mView != null) {
-                            mView.onGetDataSuccess(homestays);
-                        }
-                    }
-
+            public void onSuccess() {
+                if (mView != null) {
+                    mView.onGetDataSuccess(mDataCenter.getHomestayList());
                 }
             }
 
             @Override
-            public void onFailure(Call<HomestayResponse> call, Throwable t) {
-                Toast.makeText(mContext, t.getMessage(), Toast.LENGTH_LONG).show();
+            public void onError() {
+                mView.onLoading();
             }
         });
+//        WSInterface apiService = ApiService.getClient().create(WSInterface.class);
+//
+//        Call<HomestayResponse> call = apiService.getAllSpots();
+//        call.enqueue(new Callback<HomestayResponse>() {
+//            @Override
+//            public void onResponse(Call<HomestayResponse> call, Response<HomestayResponse> response) {
+//                if (response.code() == 200) {
+//                    if (response.body() != null) {
+//                        List<Homestay> homestays = response.body().getData().getHomestays();
+//
+//                    }
+//
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<HomestayResponse> call, Throwable t) {
+//
+//            }
+//        });
 
     }
 

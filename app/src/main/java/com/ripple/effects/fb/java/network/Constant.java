@@ -7,5 +7,6 @@ public class Constant {
     }
 
     public static final boolean sendCrashReport = false;
+//    public static final String baseUrl = "http://192.168.43.220:8080/";
     public static final String baseUrl = "http://192.168.1.3:8080/";
 }

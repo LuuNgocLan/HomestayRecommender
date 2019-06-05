@@ -6,6 +6,7 @@ import com.ripple.effects.fb.java.models.favorite.ListFavoriteResponse;
 import com.ripple.effects.fb.java.models.homestay.HomestayResponse;
 import com.ripple.effects.fb.java.models.login.LoginResponse;
 import com.ripple.effects.fb.java.models.profile.ProfileResponse;
+import com.ripple.effects.fb.java.models.search.SearchResponse;
 
 import okhttp3.RequestBody;
 import retrofit2.Call;
@@ -18,6 +19,9 @@ import retrofit2.http.Path;
 public interface WSInterface {
     @GET("homestay/")
     Call<HomestayResponse> getAllSpots();
+
+    @POST("homestay/search")
+    Call<SearchResponse> search(@Body RequestBody body);
 
     @GET("homestay/{homestayId}")
     Call<DetailHomestayResponse> getDetailHomestay(@Path("homestayId") String homestayId);
