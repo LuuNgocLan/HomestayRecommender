@@ -11,20 +11,60 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Sea" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24ae34c4-caac-4c6e-9334-dc1bc3c93109" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/search/SearchResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/ISearchContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_my_position.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_my_position.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_my_position.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_my_position.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/main/IMainListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/splash/ISplashContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/splash/SplashActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/splash/SplashPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/ITutorialContract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/TutorialActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/TutorialFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/TutorialPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_icon_app_launch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_icon_launch_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_name_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_three.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/img_two.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_icon_app_launch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_icon_launch_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_name_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_three.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/img_two.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_icon_app_launch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_icon_launch_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_name_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_three.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/img_two.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_icon_app_launch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_icon_launch_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_name_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_three.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/img_two.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_icon_app_launch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_icon_launch_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_launch_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_name_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_three.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_two.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_button_get_started.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/img_one.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tutorial_mask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/form_ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_one.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_three.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_two.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
@@ -33,16 +73,32 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/homestay/Homestay.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/homestay/Homestay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/allSpots/AllSpotsPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/allSpots/AllSpotsPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/popular/MapFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/popular/MapFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/WSInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/WSInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/bg_button_set_filter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/bg_button_set_filter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/indicator_selected.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/indicator_selected.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +127,7 @@
     <session id="-812353361">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="36" />
+          <entry key="project.closed" value="37" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
@@ -79,13 +135,14 @@
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="4" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="8" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.29" value="1" />
@@ -103,7 +160,7 @@
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="60" />
+          <entry key="project.opened" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -115,16 +172,16 @@
           <entry key="gradle" value="30" />
           <entry key="gradlew" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="560" />
+          <entry key="java" value="587" />
           <entry key="jpg" value="4" />
           <entry key="json" value="2" />
           <entry key="otf" value="8" />
-          <entry key="png" value="36" />
+          <entry key="png" value="42" />
           <entry key="pro" value="2" />
           <entry key="properties" value="3" />
           <entry key="ttc" value="1" />
           <entry key="ttf" value="2" />
-          <entry key="xml" value="360" />
+          <entry key="xml" value="382" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -133,13 +190,13 @@
           <entry key="Font" value="10" />
           <entry key="Groovy" value="30" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="Image" value="40" />
-          <entry key="JAVA" value="560" />
+          <entry key="Image" value="46" />
+          <entry key="JAVA" value="587" />
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="ProGuard File" value="2" />
           <entry key="Properties" value="3" />
-          <entry key="XML" value="360" />
+          <entry key="XML" value="382" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -147,20 +204,20 @@
           <entry key="class" value="2" />
           <entry key="dummy" value="110" />
           <entry key="gradle" value="73" />
-          <entry key="java" value="24639" />
+          <entry key="java" value="24878" />
           <entry key="json" value="1" />
           <entry key="txt" value="3" />
-          <entry key="xml" value="12053" />
+          <entry key="xml" value="12710" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="Groovy" value="73" />
-          <entry key="JAVA" value="24639" />
+          <entry key="JAVA" value="24878" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="113" />
-          <entry key="XML" value="12053" />
+          <entry key="XML" value="12710" />
         </counts>
       </usages-collector>
     </session>
@@ -168,23 +225,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="92" column="44" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
-              <folding>
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1505#1506#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="-688">
+              <caret line="29" column="242" selection-start-line="29" selection-start-column="242" selection-end-line="29" selection-end-column="242" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,113 +237,116 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/allSpots/AllSpotsFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/form_ask.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="81" column="30" selection-start-line="79" selection-start-column="8" selection-end-line="81" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchPresenter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="46" column="74" selection-start-line="46" selection-start-column="74" selection-end-line="46" selection-end-column="74" />
+            <state relative-caret-position="86">
+              <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
+                <element signature="e#655#669#0" expanded="true" />
+                <element signature="e#557#595#0" expanded="true" />
+                <element signature="e#998#1012#0" expanded="true" />
+                <element signature="e#905#941#0" expanded="true" />
+                <element signature="e#1569#1583#0" expanded="true" />
+                <element signature="e#1864#1878#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/WSInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/search/SearchResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="150" column="34" selection-start-line="150" selection-start-column="34" selection-end-line="150" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_discover.xml">
           <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="65" column="24" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="24" />
-            </state>
-          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/ISearchContract.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_button_stroke.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="143" column="35" lean-forward="true" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
               <folding>
-                <element signature="e#721#735#0" expanded="true" />
-                <element signature="e#1092#1106#0" expanded="true" />
-                <element signature="e#3995#4013#0" expanded="true" />
-                <element signature="e#4598#4612#0" expanded="true" />
-                <element signature="e#4638#4661#0" expanded="true" />
-                <element signature="e#5333#5362#0" expanded="true" />
-                <element signature="e#5879#5893#0" expanded="true" />
-                <element signature="e#5934#5948#0" expanded="true" />
-                <element signature="e#6156#6169#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2719#2720#0" expanded="true" />
+                <element signature="e#2783#2784#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/bg_button_set_filter.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="38" selection-start-column="38" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+              <folding>
+                <element signature="e#981#1004#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_one.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+              <folding>
+                <element signature="e#997#1030#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_two.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <folding>
+                <element signature="e#889#903#0" expanded="true" />
+                <element signature="e#997#1030#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_three.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+              <folding>
+                <element signature="e#893#907#0" expanded="true" />
+                <element signature="e#1000#1035#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -309,8 +356,8 @@
       <list>
         <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
-        <option value="resourceFile" />
         <option value="Interface" />
+        <option value="resourceFile" />
         <option value="Class" />
       </list>
     </option>
@@ -332,6 +379,9 @@
       <find>)</find>
       <find>mMapboxMap</find>
       <find>favorite</find>
+      <find>mImvBackground</find>
+      <find>mTvClose</find>
+      <find>mViewPager</find>
     </findStrings>
     <replaceStrings>
       <replace>mLocationComponent</replace>
@@ -345,32 +395,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_feature_1.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_feature_2.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_feature_3.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/indicator_selected.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/indicator_normal.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_feature_homestay.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/detail/DetailActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_discover.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/detailhomestay/FavoriteResponse.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/favorite/Favorite.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/IFavoriteContract.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_landscape_homestay.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/detailhomestay/Homestay.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/FavoritePresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/detail/adapter/DetailHomestayAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/login/LoginPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/adapter/FavoriteAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/base/IBaseItemListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/adapter/RecommendAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/adapter/AllSpotsAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/adapter/AllDestinationFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/allSpots/AllSpotsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/favorite/FavoriteResponse.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/IFavoriteProtocol.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/IDiscoverContract.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/profile/Profile.java" />
@@ -386,16 +413,39 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/popular/MapFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/FavoriteAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/ISearchContract.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/search/SearchResponse.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/WSInterface.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/main/IMainListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/ITutorialContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/TutorialPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_button_get_started.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/AppConfig.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/splash/ISplashContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/splash/SplashPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/TutorialFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/TutorialActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/splash/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/tutorial_mask.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/indicator_selected.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_one.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_two.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_three.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable-v24/bg_button_set_filter.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/form_ask.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -418,6 +468,96 @@
             <path>
               <item name="fb-ripple-effects-android-java" type="58d84e3e:PackageViewProjectNode" />
               <item name="app" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="android-base-component-java" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="android-base-component-java" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="java" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="java" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="java" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="discover" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="java" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="java" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="font" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
@@ -516,29 +656,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="discover" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fb-ripple-effects-android-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="discover" type="462c0819:PsiDirectoryNode" />
-              <item name="allSpots" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fb-ripple-effects-android-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="favorite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -562,6 +679,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fb-ripple-effects-android-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="search" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -570,6 +698,38 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="splash" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fb-ripple-effects-android-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="tutorial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fb-ripple-effects-android-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="widget" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fb-ripple-effects-android-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fb-ripple-effects-android-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -579,7 +739,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="anim" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-xxhdpi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fb-ripple-effects-android-java" type="b2602c69:ProjectViewProjectNode" />
@@ -588,7 +748,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="animator" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-xxxhdpi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fb-ripple-effects-android-java" type="b2602c69:ProjectViewProjectNode" />
@@ -601,106 +761,7 @@
             </path>
             <path>
               <item name="fb-ripple-effects-android-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fb-ripple-effects-android-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="android-base-component-java" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="android-base-component-java" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="java" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="java" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="java" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="discover" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="java" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="java" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="font" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="fb-ripple-effects-android-java" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
@@ -713,7 +774,7 @@
     <property name="DEBUGGABLE_PROCESS" value="com.ripple.effects.fb.java" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/fragment_discover.xml&#10;All&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/discover/allSpots/AllSpotsFragment.java&#10;discove&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.discover.DiscoverFragment&#10;Pre&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchPresenter.java&#10;W&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/network/WSInterface.java&#10;Da&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java&#10;Main&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java&#10;Con&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.network.Constant&#10;Const&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.network.Constant&#10;Cons&#9;PSI&#9;JAVA://com.base.java.core.Constant&#10;Hom&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/models/homestay/Homestay.java&#10;Map&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/popular/MapFragment.java&#10;Fav&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.favorite.FavoriteFragment&#10;Pro&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.profile.ProfilePresenter&#10;ProfileC&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.profile.IProfileContract&#10;Dis&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java&#10;WI&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/network/WSInterface.java&#10;Fa&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/favorite/FavoriteFragment.java&#10;dIS&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverPresenter.java&#10;Login&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.login.LoginPresenter&#10;Mai&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java&#10;Api&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.network.ApiService&#10;fA&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/favorite/FavoriteFragment.java&#10;all&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/discover/adapter/AllSpotsAdapter.java&#10;WS&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.network.WSInterface&#10;De&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.detail.adapter.DetailHomestayAdapter&#10;lay&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/layout_feature_3.xml&#10;layo&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/layout_feature_2.xml&#10;con&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java&#10;item&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/item_feature_homestay.xml&#10;color&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/values/colors.xml&#10;fe&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/item_feature_homestay.xml&#10;inf&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/item_infor_homestay.xml&#10;high&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/item_highlight.xml&#10;Spo&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/discover/adapter/AllSpotsAdapter.java&#10;de&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/activity_detail_new.xml&#10;detail&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/detail/DetailActivity.java&#10;Detail&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.detail.DetailActivity&#10;Logi&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/login/LoginActivity.java&#10;Log&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/login/LoginActivity.java&#10;HighL&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/filter/adapter/HighlightAdapter.java&#10;Hi&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/filter/adapter/HighlightAdapter.java&#10;cONS&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java&#10;Filter&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.filter.FilterFragment&#10;Profile&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/profile/ProfileFragment.java&#10;Sett&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.setting.SettingFragment&#10;Mani&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml&#10;High&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/filter/adapter/HighlightAdapter.java&#10;bg&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable/bg_highlight_normal.xml&#10;se&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable/bg_highlight_selected.xml" />
+    <property name="SearchEverywhereHistoryKey" value="Main&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java&#10;bg&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable/bg_button_stroke.xml&#10;Da&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java&#10;bg_bu&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable-v24/bg_button_set_filter.xml&#10;thre&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/fragment_tutorial_three.xml&#10;two&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/fragment_tutorial_two.xml&#10;tu&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/fragment_tutorial_one.xml&#10;Con&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.network.Constant&#10;spla&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/splash/SplashActivity.java&#10;tut&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/drawable/tutorial_mask.xml&#10;tuto&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/fragment_tutorial_one.xml&#10;Splash&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/splash/SplashActivity.java&#10;thr&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/fragment_tutorial_three.xml&#10;Detail&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.detail.adapter.DetailHomestayAdapter&#10;Tu&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/TutorialActivity.java&#10;Mani&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/AndroidManifest.xml&#10;filter&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/layout_option_filter.xml&#10;Sear&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchFragment.java&#10;Favo&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/favorite/FavoriteFragment.java&#10;Mai&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java&#10;Disc&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.discover.DiscoverFragment&#10;Cons&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java&#10;All&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/discover/allSpots/AllSpotsFragment.java&#10;discove&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.discover.DiscoverFragment&#10;Pre&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchPresenter.java&#10;W&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/network/WSInterface.java&#10;Const&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.network.Constant&#10;Hom&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/models/homestay/Homestay.java&#10;Map&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/popular/MapFragment.java&#10;Fav&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.favorite.FavoriteFragment&#10;Pro&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.profile.ProfilePresenter&#10;ProfileC&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.profile.IProfileContract&#10;Dis&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java&#10;WI&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/network/WSInterface.java&#10;Fa&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/favorite/FavoriteFragment.java&#10;dIS&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverPresenter.java&#10;Login&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.login.LoginPresenter&#10;Api&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.network.ApiService&#10;fA&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/favorite/FavoriteFragment.java&#10;all&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/module/discover/adapter/AllSpotsAdapter.java&#10;WS&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.network.WSInterface&#10;De&#9;PSI&#9;JAVA://com.ripple.effects.fb.java.module.detail.adapter.DetailHomestayAdapter&#10;lay&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/layout_feature_3.xml&#10;layo&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/layout_feature_2.xml&#10;con&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java&#10;item&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/item_feature_homestay.xml&#10;color&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/values/colors.xml&#10;fe&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/item_feature_homestay.xml&#10;inf&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/item_infor_homestay.xml&#10;high&#9;FILE&#9;file:///Users/lanltn/fb-ripple-effects-android-java/app/src/main/res/layout/item_highlight.xml" />
     <property name="algorithm" value="Scalr" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
@@ -728,20 +789,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/values" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/widget" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/app/src/main/res" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.ripple.effects.fb.java.module.discover" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module" />
+      <recent name="$PROJECT_DIR$/app/src/main/res" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/values" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.ripple.effects.fb.java.module.discover" />
       <recent name="com.ripple.effects.fb.java.module.welcome" />
       <recent name="com.ripple.effects.fb.java.module.detail" />
       <recent name="com.ripple.effects.fb.java.module.login" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ripple.effects.fb.java.module.discover" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ripple.effects.fb.java.module.search" />
@@ -750,9 +815,8 @@
       <recent name="com.ripple.effects.fb.java.module.favorite.adapter" />
       <recent name="com.ripple.effects.fb.java.widget" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/app/src/main/res" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ripple.effects.fb.java.module.tutorial" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -852,31 +916,32 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="733" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.12145749" side_tool="true" weight="0.23667206" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.883549" visible="true" weight="0.19386107" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.883549" visible="true" weight="0.25686592" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" sideWeight="0.11645102" side_tool="true" weight="0.28558394" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4983845" weight="0.3281493" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.4983845" weight="0.13572542" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.32659408" />
       <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.48949918" weight="0.37597504" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49757674" weight="0.5132193" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49757674" weight="0.17784712" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50080776" side_tool="true" weight="0.6687403" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.045101088" />
-      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.8610662" visible="true" weight="0.1201248" />
+      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.8610662" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Android Profiler" order="7" sideWeight="0.49919224" weight="0.17884915" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49919224" weight="0.0" />
       <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.32868218" />
-      <window_info anchor="bottom" x="206" y="145" width="1002" height="537" id="Logcat" order="10" type="FLOATING" visible="true" weight="0.6387597" />
+      <window_info anchor="bottom" x="206" y="145" width="1002" height="537" id="Logcat" order="10" type="FLOATING" weight="0.6387597" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32956383" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info active="true" anchor="right" id="Preview" order="4" visible="true" weight="0.2609047" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.2609047" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
     <layout-to-restore>
@@ -1004,7 +1069,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java</url>
-          <line>196</line>
+          <line>198</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
@@ -1172,31 +1237,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java</url>
-          <line>107</line>
+          <line>106</line>
           <properties />
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java</url>
-          <line>112</line>
+          <line>111</line>
           <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java</url>
-          <line>123</line>
+          <line>122</line>
           <properties />
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java</url>
-          <line>216</line>
+          <line>218</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java</url>
-          <line>217</line>
+          <line>219</line>
           <properties />
           <option name="timeStamp" value="93" />
         </line-breakpoint>
@@ -1214,7 +1279,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java</url>
-          <line>115</line>
+          <line>114</line>
           <properties />
           <option name="timeStamp" value="96" />
         </line-breakpoint>
@@ -1304,13 +1369,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchFragment.java</url>
-          <line>78</line>
+          <line>81</line>
           <properties />
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchFragment.java</url>
-          <line>80</line>
+          <line>83</line>
           <properties />
           <option name="timeStamp" value="122" />
         </line-breakpoint>
@@ -1389,342 +1454,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/ApiService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="5" selection-start-line="9" selection-start-column="3" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/detailhomestay/Homestay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/login/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/login/LoginPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/base/IBaseItemListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/adapter/FavoriteAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/adapter/RecommendAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/IDiscoverContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/IFavoriteProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_landscape_homestay.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="47" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/adapter/AllSpotsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="72" column="98" selection-start-line="72" selection-start-column="98" selection-end-line="72" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/adapter/AllDestinationFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/detail/adapter/DetailHomestayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2370">
-          <caret line="209" column="52" selection-start-line="209" selection-start-column="52" selection-end-line="209" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/favorite/FavoriteResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/profile/Profile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1268#1269#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1364#1365#0" expanded="true" />
-            <element signature="e#1392#1393#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1622#1623#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1688#1689#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
-            <element signature="e#1878#1879#0" expanded="true" />
-            <element signature="e#1912#1913#0" expanded="true" />
-            <element signature="e#1946#1947#0" expanded="true" />
-            <element signature="e#1976#1977#0" expanded="true" />
-            <element signature="e#2022#2023#0" expanded="true" />
-            <element signature="e#2060#2061#0" expanded="true" />
-            <element signature="e#2089#2090#0" expanded="true" />
-            <element signature="e#2113#2114#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
-            <element signature="e#2174#2175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/profile/ProfileResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/profile/IProfileContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/profile/ProfilePresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-          <folding>
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/profile/ProfileFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/detail/DetailPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-91">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/base/ParentContainerFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="111" column="51" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/homestay/Homestay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1160#1161#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#1244#1245#0" expanded="true" />
-            <element signature="e#1278#1279#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1532#1533#0" expanded="true" />
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1596#1597#0" expanded="true" />
-            <element signature="e#1626#1627#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-android-sdk/7.3.2/61725a45765abca4f01ceec805bee4557e14d53d/mapbox-android-sdk-7.3.2-sources.jar!/com/mapbox/mapboxsdk/maps/MapboxMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1962">
-          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/allSpots/AllSpotsPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="69" column="64" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
-          <folding>
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1759#1760#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-android-sdk/7.3.2/61725a45765abca4f01ceec805bee4557e14d53d/mapbox-android-sdk-7.3.2-sources.jar!/com/mapbox/mapboxsdk/annotations/Marker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="86" column="68" selection-start-line="86" selection-start-column="68" selection-end-line="86" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-android-sdk/7.3.2/61725a45765abca4f01ceec805bee4557e14d53d/mapbox-android-sdk-7.3.2-sources.jar!/com/mapbox/mapboxsdk/annotations/Icon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-android-sdk/7.3.2/61725a45765abca4f01ceec805bee4557e14d53d/mapbox-android-sdk-7.3.2-sources.jar!/com/mapbox/mapboxsdk/annotations/IconFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="184" column="16" selection-start-line="184" selection-start-column="16" selection-end-line="184" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/utils/AppUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/popular/MapFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
@@ -1745,63 +1474,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/FavoriteFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="51" column="5" selection-start-line="49" selection-start-column="7" selection-end-line="51" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/FavoritePresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1349">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="117" column="3" selection-start-line="109" selection-start-column="7" selection-end-line="117" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="188" column="11" selection-start-line="167" selection-start-column="7" selection-end-line="188" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/ISearchContract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1848,13 +1524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/allSpots/AllSpotsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="81" column="30" selection-start-line="79" selection-start-column="8" selection-end-line="81" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -1865,37 +1534,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="150" column="34" selection-start-line="150" selection-start-column="34" selection-end-line="150" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_discover.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
           <caret line="65" column="24" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="24" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="92" column="44" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
-          <folding>
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1505#1506#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="143" column="35" lean-forward="true" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
+        <state relative-caret-position="2145">
+          <caret line="143" column="35" selection-start-line="143" selection-start-column="35" selection-end-line="143" selection-end-column="35" />
           <folding>
             <element signature="e#721#735#0" expanded="true" />
             <element signature="e#1092#1106#0" expanded="true" />
@@ -1906,6 +1556,342 @@
             <element signature="e#5879#5893#0" expanded="true" />
             <element signature="e#5934#5948#0" expanded="true" />
             <element signature="e#6156#6169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/allSpots/AllSpotsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3000">
+          <caret line="253" column="35" selection-start-line="253" selection-start-column="35" selection-end-line="253" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/FavoriteFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/IFavoriteContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/favorite/FavoritePresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/main/IMainListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/DiscoverPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/discover/IDiscoverContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/search/SearchFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/ITutorialContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_save_active.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_option_filter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="236" column="58" selection-start-line="236" selection-start-column="38" selection-end-line="236" selection-end-column="58" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_button_get_started.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/splash/ISplashContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/splash/SplashPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding>
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/TutorialFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/TutorialPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/detail/adapter/DetailHomestayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2735">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/tutorial/TutorialActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2769#2770#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#4861#4862#0" expanded="true" />
+            <element signature="e#4894#4895#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_icon_launch_app.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_three.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/img_three.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/tutorial_mask.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/splash/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/indicator_selected.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="53" column="74" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_one.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <element signature="e#997#1030#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_two.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="e#889#903#0" expanded="true" />
+            <element signature="e#997#1030#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tutorial_three.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="e#893#907#0" expanded="true" />
+            <element signature="e#1000#1035#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/bg_button_set_filter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tutorial.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="e#981#1004#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/network/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/models/data/DataCenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-688">
+          <caret line="29" column="242" selection-start-line="29" selection-start-column="242" selection-end-line="29" selection-end-column="242" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_button_stroke.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/form_ask.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding>
+            <element signature="e#655#669#0" expanded="true" />
+            <element signature="e#557#595#0" expanded="true" />
+            <element signature="e#998#1012#0" expanded="true" />
+            <element signature="e#905#941#0" expanded="true" />
+            <element signature="e#1569#1583#0" expanded="true" />
+            <element signature="e#1864#1878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ripple/effects/fb/java/module/main/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2719#2720#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
           </folding>
         </state>
       </provider>

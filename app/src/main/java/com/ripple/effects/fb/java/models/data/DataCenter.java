@@ -1,7 +1,6 @@
 package com.ripple.effects.fb.java.models.data;
 
 import android.util.Log;
-import android.widget.Toast;
 
 import com.ripple.effects.fb.java.models.favorite.Favorite;
 import com.ripple.effects.fb.java.models.favorite.FavoriteResponse;
@@ -28,7 +27,7 @@ public class DataCenter {
     private OnGetDataListener mOnGetDataListener;
     private static DataCenter instance;
     private WSInterface apiService = ApiService.getClient().create(WSInterface.class);
-    public static String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ekBnbWFpbC5jb20iLCJ1c2VySWQiOiI1Y2RmYTVmZDQ5OTJkZWQ5YmUwMTUyZjMiLCJpYXQiOjE1NTk2NzI0MTksImV4cCI6MTU1OTc4MDQxOX0.wTdlqsAk8h0PyvF7_hW9PuvLPhQ2TpU2HMHPa5fL4Cg";
+    public static String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inh5ekBnbWFpbC5jb20iLCJ1c2VySWQiOiI1Y2RmYTVmZDQ5OTJkZWQ5YmUwMTUyZjMiLCJpYXQiOjE1NjAwNzUwMjIsImV4cCI6MTU2MDE4MzAyMn0.6SsTk1jtRcLzMKMHI74iyB0GtiliyVkZK8-AswII7Rk";
 
     public DataCenter() {
     }
@@ -130,8 +129,10 @@ public class DataCenter {
     }
 
     public boolean isFavoritedHomestay(String idHomestay) {
-        for (Favorite favorite : mFavorites) {
-            if (favorite.getHomestay().getId().equals(idHomestay)) return true;
+        if (mFavorites != null) {
+            for (Favorite favorite : mFavorites) {
+                if (favorite.getHomestay().getId().equals(idHomestay)) return true;
+            }
         }
         return false;
     }

@@ -50,4 +50,10 @@
     <string name="about_area">This is a local house in Giang Ta Chai village, Ta Van commune, 10km away from Sapa center, was built by people in the village, having spiritual values of H\'mong community. Far away from tourism area, nature is around with mountain, waterfall, river, bamboo forest, rice fields with amazing view. Quiet, peaceful and joyful is all about our house</string>
     <string name="price_range">PRICE RANGE</string>
     <string name="star">Most review</string>
+    <string name="action_begin">Get started</string>
+    <string name="tutorial_page_one_title">See where your staying next ...</string>
+    <string name="tutorial_page_two_title">Search for homestay ...</string>
+    <string name="tutorial_page_three_title">See all homestays around you ...</string>
+    <string name="places_i_would_love_to_visit">Places I would love to visit</string>
+    <string name="you_can_add_up_to_5_places">You can add up to 5 places</string>
 </resources>

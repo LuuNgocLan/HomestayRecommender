@@ -30,6 +30,7 @@ import com.ripple.effects.fb.java.module.discover.adapter.RecommendAdapter;
 import com.ripple.effects.fb.java.module.discover.allSpots.AllSpotsFragment;
 import com.ripple.effects.fb.java.module.favorite.IFavoriteProtocol;
 import com.ripple.effects.fb.java.module.filter.FilterFragment;
+import com.ripple.effects.fb.java.module.main.IMainListener;
 import com.ripple.effects.fb.java.module.search.SearchFragment;
 import com.yarolegovich.discretescrollview.DSVOrientation;
 import com.yarolegovich.discretescrollview.DiscreteScrollView;
@@ -65,6 +66,7 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
     private RecommendAdapter mRecommendAdapter;
     private AllSpotsAdapter mAllSpotsAdapter;
     private DestinationsAdapter mDestinationsAdapter;
+    private IMainListener mIMainListener;
 
     public static DiscoverFragment newInstance(IBaseListener iBaseListener) {
         DiscoverFragment fragment = new DiscoverFragment();
@@ -248,6 +250,9 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
 
     @Override
     public void onUpdateFavoriteSuccess() {
+        if (mIMainListener != null) {
+            mIMainListener.onRefreshData();
+        }
         Toast.makeText(getContext(), "Favorite Success!", Toast.LENGTH_SHORT).show();
     }
 
@@ -255,5 +260,9 @@ public class DiscoverFragment extends BaseFragment implements IDiscoverContract.
     public void onUpdateFavoriteFailed() {
         Toast.makeText(getContext(), "Favorite Failed!", Toast.LENGTH_SHORT).show();
 
+    }
+
+    public void setIMainListener(IMainListener iMainListener) {
+        mIMainListener = iMainListener;
     }
 }

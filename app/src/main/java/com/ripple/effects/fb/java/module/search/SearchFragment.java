@@ -1,5 +1,6 @@
 package com.ripple.effects.fb.java.module.search;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -76,9 +78,17 @@ public class SearchFragment extends BaseFragment implements ISearchContract.IVie
 
     @OnClick(R.id.imv_search)
     public void onClickSearch(View view) {
+        hideKeyboard(getView());
         keyword = mEdtSearch.getText().toString();
         if (mIPresenter != null) {
             mIPresenter.search(keyword);
+        }
+    }
+
+    private void hideKeyboard(View view) {
+        InputMethodManager inputMethodManager = (InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+        if (inputMethodManager != null) {
+            inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
 

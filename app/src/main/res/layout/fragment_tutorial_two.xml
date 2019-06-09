@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_two" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tutorial_mask" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="left"
+        android:paddingStart="@dimen/_30dp"
+        android:lines="2"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="1.3"
+        android:text="@string/tutorial_page_two_title"
+        android:textColor="#211C1E"
+        android:textSize="20dp" />
+
+</RelativeLayout>

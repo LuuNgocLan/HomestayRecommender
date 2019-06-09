@@ -30,7 +30,7 @@ import static com.ripple.effects.fb.java.module.base.ParentContainerFragment.Par
 import static com.ripple.effects.fb.java.module.base.ParentContainerFragment.ParentContainerRoot.PARENT_TAB_3;
 import static com.ripple.effects.fb.java.module.profile.ProfileFragment.LOGIN_CODE;
 
-public class MainActivity extends BaseActivity implements IMainContract.IMainView, IBaseListener {
+public class MainActivity extends BaseActivity implements IMainContract.IMainView, IBaseListener,IMainListener {
 
     @BindView(R.id.mvp_main)
     MainViewPager mMainViewPager;
@@ -179,6 +179,11 @@ public class MainActivity extends BaseActivity implements IMainContract.IMainVie
                 Toast.makeText(getApplicationContext(), "Finish Login", Toast.LENGTH_SHORT).show();
             }
         }
+
+    }
+
+    @Override
+    public void onRefreshData() {
 
     }
 }
