@@ -2,10 +2,6 @@ package com.ripple.effects.fb.java.module.favorite;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,11 +12,9 @@ import com.base.java.IBaseListener;
 import com.base.java.mvp.BaseFragment;
 import com.base.java.mvp.IBasePresenter;
 import com.ripple.effects.fb.java.R;
-import com.ripple.effects.fb.java.models.detailhomestay.Homestay;
 import com.ripple.effects.fb.java.models.favorite.Favorite;
 import com.ripple.effects.fb.java.module.base.IBaseItemListener;
 import com.ripple.effects.fb.java.module.detail.DetailActivity;
-import com.ripple.effects.fb.java.module.discover.DiscoverFragment;
 import com.ripple.effects.fb.java.module.favorite.adapter.FavoriteAdapter;
 
 import java.util.ArrayList;
@@ -30,6 +24,11 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.ripple.effects.fb.java.utils.AppUtils.ID_HOMESTAY;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class FavoriteFragment
         extends BaseFragment

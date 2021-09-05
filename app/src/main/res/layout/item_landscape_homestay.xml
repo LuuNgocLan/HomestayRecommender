@@ -9,7 +9,7 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="5dp">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -102,6 +102,6 @@
             android:background="@drawable/bg_selector_ripple"
             android:src="@drawable/selector_favorite_toggle"/>
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.ConstraintLayout>
 
 </android.support.v7.widget.CardView>

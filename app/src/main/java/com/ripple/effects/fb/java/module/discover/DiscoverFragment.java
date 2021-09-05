@@ -2,12 +2,14 @@ package com.ripple.effects.fb.java.module.discover;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +30,6 @@ import com.ripple.effects.fb.java.module.discover.adapter.AllSpotsAdapter;
 import com.ripple.effects.fb.java.module.discover.adapter.DestinationsAdapter;
 import com.ripple.effects.fb.java.module.discover.adapter.RecommendAdapter;
 import com.ripple.effects.fb.java.module.discover.allSpots.AllSpotsFragment;
-import com.ripple.effects.fb.java.module.favorite.IFavoriteProtocol;
 import com.ripple.effects.fb.java.module.filter.FilterFragment;
 import com.ripple.effects.fb.java.module.main.IMainListener;
 import com.ripple.effects.fb.java.module.search.SearchFragment;

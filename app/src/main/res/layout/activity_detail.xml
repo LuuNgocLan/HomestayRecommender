@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".module.detail.DetailActivity">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -150,7 +150,7 @@
             android:layout_marginStart="10dp">
 
         </com.ripple.effects.fb.java.widget.AvatarListCustomView>
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.ConstraintLayout>
 
     <include
         layout="@layout/bottom_sheet"

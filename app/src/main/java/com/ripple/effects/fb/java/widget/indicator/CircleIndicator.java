@@ -7,18 +7,17 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.database.DataSetObserver;
 import android.os.Build;
-import android.support.annotation.AnimatorRes;
-import android.support.annotation.DrawableRes;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
 
-import com.ripple.effects.fb.java.R;
+import androidx.annotation.AnimatorRes;
+import androidx.annotation.DrawableRes;
+import androidx.viewpager.widget.ViewPager;
 
-import static android.support.v4.view.ViewPager.OnPageChangeListener;
+import com.ripple.effects.fb.java.R;
 
 public class CircleIndicator extends LinearLayout {
 
@@ -174,7 +173,7 @@ public class CircleIndicator extends LinearLayout {
         }
     }
 
-    private final OnPageChangeListener mInternalPageChangeListener = new OnPageChangeListener() {
+    private final ViewPager.OnPageChangeListener mInternalPageChangeListener = new ViewPager.OnPageChangeListener() {
 
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -249,7 +248,7 @@ public class CircleIndicator extends LinearLayout {
      * @deprecated User ViewPager addOnPageChangeListener
      */
     @Deprecated
-    public void setOnPageChangeListener(OnPageChangeListener onPageChangeListener) {
+    public void setOnPageChangeListener(ViewPager.OnPageChangeListener onPageChangeListener) {
         if (mViewpager == null) {
             throw new NullPointerException("can not find Viewpager , setViewPager first");
         }

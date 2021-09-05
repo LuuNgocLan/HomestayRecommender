@@ -1,10 +1,11 @@
 package com.ripple.effects.fb.java.module.base;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.base.java.IBaseListener;
 import com.base.java.mvp.BaseContainerFragment;
@@ -14,7 +15,6 @@ import com.ripple.effects.fb.java.module.favorite.FavoriteFragment;
 import com.ripple.effects.fb.java.module.discover.DiscoverFragment;
 import com.ripple.effects.fb.java.module.popular.MapFragment;
 import com.ripple.effects.fb.java.module.profile.ProfileFragment;
-import com.ripple.effects.fb.java.module.setting.SettingFragment;
 
 
 public class ParentContainerFragment

@@ -3,8 +3,6 @@ package com.base.java.core.helper;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.widget.ImageView;
 
 import com.base.java.R;
@@ -18,6 +16,9 @@ import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
 
 import static android.widget.ImageView.ScaleType.CENTER_CROP;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 public class ImageHelper {
 

@@ -2,14 +2,15 @@ package com.ripple.effects.fb.java.module.main;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import android.widget.Toast;
 
 import com.base.java.IBaseListener;
 import com.base.java.mvp.BaseActivity;
 import com.base.java.mvp.IBasePresenter;
+import com.google.android.material.tabs.TabLayout;
 import com.ripple.effects.fb.java.R;
 import com.ripple.effects.fb.java.models.data.DataCenter;
 import com.ripple.effects.fb.java.module.base.ParentContainerFragment;

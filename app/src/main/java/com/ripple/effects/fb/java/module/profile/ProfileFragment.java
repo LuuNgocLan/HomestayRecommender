@@ -2,8 +2,10 @@ package com.ripple.effects.fb.java.module.profile;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +21,6 @@ import com.base.java.core.helper.ImageHelper;
 import com.base.java.core.helper.PreferencesHelper;
 import com.base.java.mvp.BaseFragment;
 import com.base.java.mvp.IBasePresenter;
-import com.mapbox.core.utils.TextUtils;
 import com.ripple.effects.fb.java.R;
 import com.ripple.effects.fb.java.models.profile.Profile;
 import com.ripple.effects.fb.java.module.login.LoginActivity;

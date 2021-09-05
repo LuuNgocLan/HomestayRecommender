@@ -1,16 +1,18 @@
 package com.ripple.effects.fb.java.widget;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
-import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 import com.ripple.effects.fb.java.R;
+
+import java.util.Objects;
 
 
 public class CustomTab
@@ -31,7 +33,7 @@ public class CustomTab
     @Override
     public void setupWithViewPager(@Nullable ViewPager viewPager) {
         super.setupWithViewPager(viewPager);
-        if (viewPager.getAdapter() == null)
+        if (Objects.requireNonNull(viewPager).getAdapter() == null)
             return;
         setupTab();
     }

@@ -4,9 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.ripple.effects.fb.java.models.login.LoginResponse;
-import com.ripple.effects.fb.java.module.main.MainActivity;
 import com.ripple.effects.fb.java.network.ApiService;
-import com.ripple.effects.fb.java.network.Constant;
 import com.ripple.effects.fb.java.network.WSInterface;
 
 import org.json.JSONException;
@@ -16,8 +14,6 @@ import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
-import static android.support.constraint.Constraints.TAG;
 
 public class LoginPresenter implements ILoginContract.ILoginPresenter {
 

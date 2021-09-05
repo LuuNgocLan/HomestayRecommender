@@ -7,12 +7,14 @@ import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.ripple.effects.fb.java.R;
 
@@ -20,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExpandableTextView
-        extends android.support.v7.widget.AppCompatTextView {
+        extends AppCompatTextView {
 
     private final List<OnExpandListener> onExpandListeners;
     private TimeInterpolator expandInterpolator;

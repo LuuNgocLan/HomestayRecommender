@@ -1,11 +1,13 @@
 package com.base.java.mvp;
 
-import android.support.transition.Slide;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.view.Gravity;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.transition.Slide;
+
 import java.util.List;
+
 
 public abstract class BaseContainerFragment extends BaseFragment implements IBaseContainerFragment {
     @Override

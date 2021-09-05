@@ -4,27 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.base.java.core.utils.ViewUtils;
-import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.ripple.effects.fb.java.R;
 import com.ripple.effects.fb.java.models.detailhomestay.Homestay;
 import com.ripple.effects.fb.java.models.detailhomestay.Review;
@@ -33,17 +20,20 @@ import com.ripple.effects.fb.java.widget.ExpandableTextView;
 import com.ripple.effects.fb.java.widget.SectioningAdapter;
 import com.ripple.effects.fb.java.widget.indicator.CircleIndicator;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import io.reactivex.internal.fuseable.HasUpstreamObservableSource;
-import retrofit2.http.PUT;
-
 import static com.base.java.core.utils.DimenUtils.dpToPx;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 public class DetailHomestayAdapter extends SectioningAdapter {
 

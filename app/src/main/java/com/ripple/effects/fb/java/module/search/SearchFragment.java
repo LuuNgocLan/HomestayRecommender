@@ -3,11 +3,12 @@ package com.ripple.effects.fb.java.module.search;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,7 +25,6 @@ import com.ripple.effects.fb.java.R;
 import com.ripple.effects.fb.java.models.homestay.Homestay;
 import com.ripple.effects.fb.java.module.base.IBaseItemListener;
 import com.ripple.effects.fb.java.module.detail.DetailActivity;
-import com.ripple.effects.fb.java.module.favorite.adapter.FavoriteAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

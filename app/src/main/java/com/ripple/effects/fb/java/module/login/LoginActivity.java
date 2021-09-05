@@ -1,11 +1,8 @@
 package com.ripple.effects.fb.java.module.login;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +10,6 @@ import android.widget.EditText;
 import com.base.java.core.helper.PreferencesHelper;
 import com.base.java.mvp.BaseActivity;
 import com.base.java.mvp.IBasePresenter;
-import com.base.java.mvp.IBaseView;
 import com.ripple.effects.fb.java.R;
 import com.ripple.effects.fb.java.module.main.MainActivity;
 

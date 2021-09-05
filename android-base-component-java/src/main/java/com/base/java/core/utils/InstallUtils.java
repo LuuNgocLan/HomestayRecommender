@@ -2,8 +2,9 @@ package com.base.java.core.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import com.base.java.core.helper.PreferencesHelper;
 

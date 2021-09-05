@@ -1,6 +1,6 @@
 package com.ripple.effects.fb.java.widget.indicator;
 
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 
 public interface PageIndicator extends ViewPager.OnPageChangeListener {
     /**
