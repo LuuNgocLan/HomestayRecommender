@@ -1,2 +1,10 @@
 # HomestayRecommender
-This App is a final Project at University
+
+## Main Functions
+
+## Technologies Used
+
+## UI
+
+## Material references
+
