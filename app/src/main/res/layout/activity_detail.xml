@@ -140,7 +140,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/line2"
             app:layout_constraintTop_toBottomOf="@id/tv_review_num" />
-        <com.ripple.effects.fb.java.widget.AvatarListCustomView
+        <com.ripple.effects.fb.travel.widget.AvatarListCustomView
             android:id="@+id/list_avatar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -149,7 +149,7 @@
             app:layout_constraintStart_toEndOf="@id/text_review"
             android:layout_marginStart="10dp">
 
-        </com.ripple.effects.fb.java.widget.AvatarListCustomView>
+        </com.ripple.effects.fb.travel.widget.AvatarListCustomView>
     </androidx.constraintlayout.ConstraintLayout>
 
     <include
